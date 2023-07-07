@@ -1,0 +1,5 @@
+res://tools/Global.gd
+res://tools/Events.gd
+res://tools/SoundManager.tscn
+res://Main.tscn
+res://Main.gd
