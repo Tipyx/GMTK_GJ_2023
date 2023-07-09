@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ctepl8drxqjpt"
+path="res://.godot/imported/HELLO CAT-07.wav-d09432299f05e09e37432d368338e1bb.sample"
+
+[deps]
+
+source_file="res://sounds/sfxs/hellos/CAT/HELLO CAT-07.wav"
+dest_files=["res://.godot/imported/HELLO CAT-07.wav-d09432299f05e09e37432d368338e1bb.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

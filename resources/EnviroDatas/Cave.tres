@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="EnviroData" load_steps=3 format=3 uid="uid://bf2c8epulxmb4"]
+
+[ext_resource type="Texture2D" uid="uid://cvwvjfllxw32" path="res://assets/STAMP BLUE CAVE.png" id="1_wa2ag"]
+[ext_resource type="Script" path="res://resources/EnviroData.gd" id="2_yxc65"]
+
+[resource]
+script = ExtResource("2_yxc65")
+type = 0
+img = ExtResource("1_wa2ag")

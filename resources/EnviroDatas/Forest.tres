@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="QuestTypeData" load_steps=3 format=3 uid="uid://b38chxl1e3q6a"]
+
+[ext_resource type="Texture2D" uid="uid://dnsdo38vp121u" path="res://assets/STAMP BLUE FOREST.png" id="1_76aun"]
+[ext_resource type="Script" path="res://resources/EnviroData.gd" id="1_yqmvb"]
+
+[resource]
+script = ExtResource("1_yqmvb")
+type = 1
+img = ExtResource("1_76aun")

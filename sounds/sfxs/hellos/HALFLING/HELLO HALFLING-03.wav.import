@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dc4ypq3r526eo"
+path="res://.godot/imported/HELLO HALFLING-03.wav-97a7e0a392a9663a0a88d67b085ebc8a.sample"
+
+[deps]
+
+source_file="res://sounds/sfxs/hellos/HALFLING/HELLO HALFLING-03.wav"
+dest_files=["res://.godot/imported/HELLO HALFLING-03.wav-97a7e0a392a9663a0a88d67b085ebc8a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

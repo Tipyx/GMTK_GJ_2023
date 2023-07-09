@@ -1,0 +1,61 @@
+[gd_scene load_steps=13 format=3 uid="uid://b622b7h4g6vnw"]
+
+[ext_resource type="Script" path="res://ui/EndGameScreen.gd" id="1_grnug"]
+[ext_resource type="Texture2D" uid="uid://dmxiatj0rnjs5" path="res://assets/bg_day_1.png" id="2_5srte"]
+[ext_resource type="Texture2D" uid="uid://2nohbnmsixf6" path="res://assets/bg_desk.png" id="2_k7twj"]
+[ext_resource type="Theme" uid="uid://c8i6r0rcgfek1" path="res://ui/dialogBoxTheme.tres" id="3_xurji"]
+[ext_resource type="Texture2D" uid="uid://bbl6h4uk50570" path="res://assets/exitNormal.png" id="5_08its"]
+[ext_resource type="Texture2D" uid="uid://52lxdrlk17h8" path="res://assets/exitPressed.png" id="6_8cawd"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bdk54"]
+texture = ExtResource("5_08its")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gd6x6"]
+texture = ExtResource("5_08its")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dk6au"]
+texture = ExtResource("5_08its")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mw7uu"]
+texture = ExtResource("5_08its")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_urg7h"]
+texture = ExtResource("6_8cawd")
+
+[sub_resource type="Theme" id="Theme_aovgu"]
+Button/styles/disabled = SubResource("StyleBoxTexture_bdk54")
+Button/styles/focus = SubResource("StyleBoxTexture_gd6x6")
+Button/styles/hover = SubResource("StyleBoxTexture_dk6au")
+Button/styles/normal = SubResource("StyleBoxTexture_mw7uu")
+Button/styles/pressed = SubResource("StyleBoxTexture_urg7h")
+
+[node name="EndGameScreen" type="Node2D"]
+script = ExtResource("1_grnug")
+
+[node name="BG" type="Sprite2D" parent="."]
+modulate = Color(0.619608, 0.619608, 0.619608, 1)
+texture = ExtResource("2_k7twj")
+centered = false
+
+[node name="BG_1" type="Sprite2D" parent="."]
+scale = Vector2(1, 1.53)
+texture = ExtResource("2_5srte")
+centered = false
+
+[node name="Label" type="Label" parent="."]
+offset_left = 480.0
+offset_top = 244.0
+offset_right = 1394.0
+offset_bottom = 598.0
+theme = ExtResource("3_xurji")
+text = "The point of running a business is not to lose money, right? Because we lost X gold in your first week. It's bankrupt time. We have to close our door, not it's your turn to beg for a job! You should cross the road to find another job; King Camron said it works like that."
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Button" type="Button" parent="."]
+offset_left = 711.0
+offset_top = 741.0
+offset_right = 1212.0
+offset_bottom = 1030.0
+focus_mode = 0
+theme = SubResource("Theme_aovgu")

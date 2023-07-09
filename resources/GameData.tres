@@ -1,0 +1,204 @@
+[gd_resource type="Resource" script_class="GameData" load_steps=2 format=3 uid="uid://dq3i3jpcg2ggd"]
+
+[ext_resource type="Script" path="res://resources/GameData.gd" id="1_goeon"]
+
+[resource]
+script = ExtResource("1_goeon")
+charac_class_attribute = {
+"Bard": {
+"Dungeon": -2,
+"Fight": -1,
+"Robbery": 1,
+"Snakes": 2
+},
+"Druid": {
+"Cats": -2,
+"Escort": 1,
+"Picking": 2,
+"Rescue": 1,
+"Snakes": -1,
+"Spiders": -1,
+"Wolves": -2
+},
+"Peasant": {
+"Cats": -1,
+"Picking": 2,
+"Robbery": -2,
+"Snakes": 1,
+"Spiders": 1
+},
+"Scholar": {
+"Cats": 2,
+"Dungeon": -2,
+"Excavation": 1,
+"Fight": -2,
+"Picking": 1,
+"Robbery": -1
+},
+"Thief": {
+"Cats": -2,
+"Delivery": -1,
+"Desert": -2,
+"Excavation": 1,
+"Mountain": 1,
+"Picking": 1,
+"Robbery": 2
+},
+"Warrior": {
+"Cave": -1,
+"Dungeon": 2,
+"Escort": 1,
+"Fight": 2,
+"Rescue": 1,
+"Robbery": -2,
+"Swamp": -2
+}
+}
+charac_specie_attribute = {
+"Cat": {
+"Cats": -2,
+"Childs": 2,
+"Excavation": 1,
+"Robbery": 2,
+"Sea": -2,
+"Swamp": -1
+},
+"Dwarf": {
+"Cave": 1,
+"Dwarves": -2,
+"Elves": 2,
+"Forest": -1,
+"Mountain": 2,
+"Orks": 1,
+"Picking": -2,
+"Sea": -1
+},
+"Elf": {
+"Cave": -1,
+"Delivery": 1,
+"Dwarves": 2,
+"Elves": -2,
+"Forest": 2
+},
+"Halfling": {
+"CarnivorousPlants": -1,
+"Cave": 1,
+"Delivery": -2,
+"Forest": 2,
+"Robbery": 2,
+"Swamp": 1,
+"Wolves": -1
+},
+"Human": {
+"Cats": -1,
+"Childs": -2,
+"Forest": 1,
+"Sea": 2
+},
+"Ork": {
+"Desert": -2,
+"Dungeon": 2,
+"Dwarves": 1,
+"Fight": 2,
+"Mountain": 1,
+"Orks": -2,
+"Robbery": -1,
+"Swamp": -1
+},
+"Unicorn": {
+"Cave": -2,
+"Childs": 2,
+"Delivery": 1,
+"Escort": 2,
+"Jungle": -1,
+"Robbery": -2,
+"Sea": -1
+}
+}
+charac_trait_attribute = {
+"Acrophobia": {
+"Mountain": -2,
+"Volcano": -2
+},
+"Agile": {
+"Jungle": 1,
+"Robbery": 2,
+"Swamp": 1
+},
+"Antropophobic": {
+"Childs": 2,
+"Escort": -2,
+"Rescue": -2
+},
+"Aracnophobia": {
+"Spiders": -2
+},
+"Chatty": {
+"Escort": -2
+},
+"Claustrophobic": {
+"Cave": -2
+},
+"Clumsy": {
+"Delivery": -1,
+"Excavation": -1,
+"Robbery": -2
+},
+"Discretion": {
+"Cave": 1,
+"Robbery": 2
+},
+"Fast_Runner": {
+"Delivery": 2
+},
+"Hates_Heat": {
+"Cave": 2,
+"Desert": -2,
+"Mountain": 2,
+"Volcano": -2
+},
+"Honest": {
+"Delivery": 2,
+"Robbery": -2
+},
+"Hooking": {
+"Robbery": 2
+},
+"Light_Steps": {
+"Robbery": 2,
+"Swamp": 2
+},
+"Ophiophobia": {
+"Snakes": -2
+},
+"Pollen_Allergy": {
+"CarnivorousPlants": 1,
+"Forest": -2,
+"Picking": -2
+},
+"Prebyopic": {
+"Cats": 2,
+"Excavation": -2,
+"Picking": -2
+},
+"Skipper": {
+"Sea": 2
+},
+"Skittish": {
+"Cave": -1,
+"Desert": 2,
+"Mountain": -2,
+"Volcano": 2
+},
+"Supernatural_Hearing": {
+"Cats": 2,
+"Cave": 1,
+"Childs": -2
+},
+"Survival": {
+"CarnivorousPlants": 1,
+"Desert": 2,
+"Jungle": 2,
+"Wolves": 1
+}
+}

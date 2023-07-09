@@ -1,0 +1,58 @@
+[gd_scene load_steps=12 format=3 uid="uid://45h6x0v1wt5x"]
+
+[ext_resource type="Script" path="res://ui/TutoScreen.gd" id="1_i7o01"]
+[ext_resource type="Texture2D" uid="uid://2nohbnmsixf6" path="res://assets/bg_desk.png" id="1_qmlt5"]
+[ext_resource type="Texture2D" uid="uid://cuak52awghulh" path="res://assets/tuto.png" id="2_blry6"]
+[ext_resource type="Texture2D" uid="uid://cvh7re8pehuks" path="res://assets/GMTK23_UI_Next02_Unpushed.png" id="4_xwtt1"]
+[ext_resource type="Texture2D" uid="uid://drn4r4gd1bvjt" path="res://assets/GMTK23_UI_Next02_Pushed.png" id="5_8j1sv"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sl38c"]
+texture = ExtResource("4_xwtt1")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4lnlt"]
+texture = ExtResource("4_xwtt1")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gba4o"]
+texture = ExtResource("4_xwtt1")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ncyci"]
+texture = ExtResource("4_xwtt1")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_456ig"]
+texture = ExtResource("5_8j1sv")
+
+[sub_resource type="Theme" id="Theme_88nqk"]
+Button/styles/disabled = SubResource("StyleBoxTexture_sl38c")
+Button/styles/focus = SubResource("StyleBoxTexture_4lnlt")
+Button/styles/hover = SubResource("StyleBoxTexture_gba4o")
+Button/styles/normal = SubResource("StyleBoxTexture_ncyci")
+Button/styles/pressed = SubResource("StyleBoxTexture_456ig")
+
+[node name="TutoScreen" type="Node2D"]
+script = ExtResource("1_i7o01")
+
+[node name="BG" type="Sprite2D" parent="."]
+texture = ExtResource("1_qmlt5")
+centered = false
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_blry6")
+centered = false
+
+[node name="NextButton" type="Button" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 1605.0
+offset_top = 895.0
+offset_right = 1835.0
+offset_bottom = 1024.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 8
+focus_mode = 0
+mouse_filter = 1
+theme = SubResource("Theme_88nqk")

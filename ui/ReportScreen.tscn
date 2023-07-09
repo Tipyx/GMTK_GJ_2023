@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://dl7mqkxyglkhw"]
+
+[ext_resource type="Script" path="res://ui/ReportScreen.gd" id="1_kr1cx"]
+[ext_resource type="Texture2D" uid="uid://ecpex8ujcit1" path="res://assets/bg_report.png" id="2_eevge"]
+[ext_resource type="FontFile" uid="uid://c6jmmhluhpupo" path="res://assets/fonts/Warung Kopi Regular.otf" id="3_thk7s"]
+
+[sub_resource type="Theme" id="Theme_5trav"]
+Label/colors/font_color = Color(0.317647, 0.219608, 0.156863, 1)
+Label/font_sizes/font_size = 35
+Label/fonts/font = ExtResource("3_thk7s")
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_kr1cx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_eevge")
+centered = false
+
+[node name="DescLabel" type="Label" parent="."]
+offset_left = 827.0
+offset_top = 455.0
+offset_right = 1333.0
+offset_bottom = 817.0
+theme = SubResource("Theme_5trav")
+text = "I have average hearing and can't handle children's cries for more than two minutes. While supernatural hearing can be a blessing in a cave or against a sneaky companion, it's not always the case."
+vertical_alignment = 1
+autowrap_mode = 3
+clip_text = true
+
+[node name="TitleLabel" type="Label" parent="."]
+offset_left = 514.0
+offset_top = 242.0
+offset_right = 1382.0
+offset_bottom = 285.0
+theme = SubResource("Theme_5trav")
+text = "{name} nailed the {type} mission!"
+horizontal_alignment = 1
+autowrap_mode = 3

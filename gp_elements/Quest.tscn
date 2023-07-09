@@ -1,0 +1,89 @@
+[gd_scene load_steps=26 format=3 uid="uid://cq33o4d8lnb3x"]
+
+[ext_resource type="Texture2D" uid="uid://cho2uuwlavba" path="res://assets/bg_quest.png" id="1_o5tlt"]
+[ext_resource type="Script" path="res://gp_elements/Quest.gd" id="1_qn4tg"]
+[ext_resource type="Resource" uid="uid://c06uuqfxw2mp3" path="res://resources/MonsterDatas/CarnivorousPlant.tres" id="2_vau1k"]
+[ext_resource type="Texture2D" uid="uid://cvwvjfllxw32" path="res://assets/STAMP BLUE CAVE.png" id="3_0foxg"]
+[ext_resource type="Theme" uid="uid://bvwc2kgyrm5d1" path="res://ui/questTheme.tres" id="3_7jh17"]
+[ext_resource type="Resource" uid="uid://ckwt5mxg85btt" path="res://resources/MonsterDatas/Cats.tres" id="3_tdfxq"]
+[ext_resource type="Resource" uid="uid://b45hk86g1o1w7" path="res://resources/MonsterDatas/Childs.tres" id="4_etejs"]
+[ext_resource type="Resource" uid="uid://dfhv6octrstl8" path="res://resources/MonsterDatas/Dwarves.tres" id="5_ddud1"]
+[ext_resource type="Texture2D" uid="uid://d1d8ngdp2huu2" path="res://assets/GMTK23_IlluMonsters02_Child.png" id="5_p8how"]
+[ext_resource type="Resource" uid="uid://baa632j3uy5in" path="res://resources/MonsterDatas/Elfs.tres" id="6_tqh35"]
+[ext_resource type="Resource" uid="uid://ds2hoi0t0yheh" path="res://resources/MonsterDatas/Orks.tres" id="7_npbje"]
+[ext_resource type="Resource" uid="uid://euo5huad8npb" path="res://resources/MonsterDatas/Snakes.tres" id="8_iijrr"]
+[ext_resource type="Resource" uid="uid://cogqbiuvqpo5t" path="res://resources/MonsterDatas/Spiders.tres" id="9_u3t7g"]
+[ext_resource type="Resource" uid="uid://b02xdm4bxawh2" path="res://resources/MonsterDatas/Wolves.tres" id="10_sdhwv"]
+[ext_resource type="Resource" uid="uid://bf2c8epulxmb4" path="res://resources/EnviroDatas/Cave.tres" id="11_uhnlo"]
+[ext_resource type="Resource" uid="uid://csogr7dh4b1f4" path="res://resources/EnviroDatas/Desert.tres" id="12_htggn"]
+[ext_resource type="Resource" uid="uid://b38chxl1e3q6a" path="res://resources/EnviroDatas/Forest.tres" id="13_c6121"]
+[ext_resource type="Resource" uid="uid://cn1wdapyh20rl" path="res://resources/EnviroDatas/Jungle.tres" id="14_xvp0k"]
+[ext_resource type="Resource" uid="uid://4ec0hjnrt2kv" path="res://resources/EnviroDatas/Mountain.tres" id="15_i8y8f"]
+[ext_resource type="Resource" uid="uid://spevyd2ooqql" path="res://resources/EnviroDatas/Sea.tres" id="16_l4u0s"]
+[ext_resource type="Resource" uid="uid://4lv5qq1dy1u3" path="res://resources/EnviroDatas/Swamp.tres" id="17_4j6t2"]
+[ext_resource type="Resource" uid="uid://vivhbbtsq3hk" path="res://resources/EnviroDatas/Volcano.tres" id="18_qacbq"]
+[ext_resource type="FontFile" uid="uid://blq1ooo7hynag" path="res://assets/fonts/Acadian_Runes-Regular_PERSONAL_USE.ttf" id="23_0dt61"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m658f"]
+size = Vector2(325, 575)
+
+[sub_resource type="Theme" id="Theme_srun8"]
+Label/colors/font_color = Color(1, 0.882353, 0, 1)
+Label/colors/font_outline_color = Color(0, 0, 0, 1)
+Label/colors/font_shadow_color = Color(0, 0, 0, 0.498039)
+Label/constants/outline_size = 8
+Label/constants/shadow_offset_x = 2
+Label/constants/shadow_offset_y = 2
+Label/font_sizes/font_size = 30
+Label/fonts/font = ExtResource("23_0dt61")
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_qn4tg")
+monsterDatas = Array[Resource("res://resources/MonsterData.gd")]([ExtResource("2_vau1k"), ExtResource("3_tdfxq"), ExtResource("4_etejs"), ExtResource("5_ddud1"), ExtResource("6_tqh35"), ExtResource("7_npbje"), ExtResource("8_iijrr"), ExtResource("9_u3t7g"), ExtResource("10_sdhwv")])
+enviroDatas = Array[Resource("res://resources/EnviroData.gd")]([ExtResource("11_uhnlo"), ExtResource("12_htggn"), ExtResource("13_c6121"), ExtResource("14_xvp0k"), ExtResource("15_i8y8f"), ExtResource("16_l4u0s"), ExtResource("17_4j6t2"), ExtResource("18_qacbq")])
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_m658f")
+
+[node name="BG" type="Sprite2D" parent="."]
+texture = ExtResource("1_o5tlt")
+
+[node name="BiomeStamp" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.733333)
+position = Vector2(-71, 15)
+scale = Vector2(0.101, 0.101)
+texture = ExtResource("3_0foxg")
+
+[node name="TypeLabel" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -156.0
+offset_top = -84.0
+offset_right = 127.0
+offset_bottom = 14.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme = ExtResource("3_7jh17")
+text = "Excavation"
+horizontal_alignment = 2
+
+[node name="MonsterStamp" type="Sprite2D" parent="."]
+position = Vector2(41.3571, 200.648)
+scale = Vector2(1.08682, 1.08727)
+skew = 0.0183343
+texture = ExtResource("5_p8how")
+
+[node name="GoldLabel" type="Label" parent="."]
+offset_left = 5.0
+offset_top = -195.0
+offset_right = 71.0
+offset_bottom = -161.0
+theme = SubResource("Theme_srun8")
+text = "999"
+horizontal_alignment = 2

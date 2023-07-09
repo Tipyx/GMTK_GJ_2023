@@ -1,9 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://bqxk4fhcd7cvi"]
+[gd_scene load_steps=3 format=3 uid="uid://bqxk4fhcd7cvi"]
 
 [ext_resource type="Script" path="res://tools/SoundManager.gd" id="1_ehmjh"]
+[ext_resource type="AudioStream" uid="uid://db06gpvr08iyx" path="res://sounds/musics/themeLoop.wav" id="2_otpaf"]
 
 [node name="SoundManager" type="Node"]
 script = ExtResource("1_ehmjh")
+music = ExtResource("2_otpaf")
 
 [node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
-autoplay = true

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cee1d1llu15fg"
+path="res://.godot/imported/HELLO DWARF.wav-ed3bc6a518c9abe5d1c89d56c312640d.sample"
+
+[deps]
+
+source_file="res://sounds/sfxs/hellos/DWARF/HELLO DWARF.wav"
+dest_files=["res://.godot/imported/HELLO DWARF.wav-ed3bc6a518c9abe5d1c89d56c312640d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

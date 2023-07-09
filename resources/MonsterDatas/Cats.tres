@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="MonsterData" load_steps=3 format=3 uid="uid://ckwt5mxg85btt"]
+
+[ext_resource type="Texture2D" uid="uid://c4ffxmwyxpe50" path="res://assets/PNG CAT124.png" id="1_fde2i"]
+[ext_resource type="Script" path="res://resources/MonsterData.gd" id="1_njg7d"]
+
+[resource]
+script = ExtResource("1_njg7d")
+type = 3
+img = ExtResource("1_fde2i")

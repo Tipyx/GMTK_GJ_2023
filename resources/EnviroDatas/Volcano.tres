@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="QuestTypeData" load_steps=3 format=3 uid="uid://vivhbbtsq3hk"]
+
+[ext_resource type="Script" path="res://resources/EnviroData.gd" id="1_4em7t"]
+[ext_resource type="Texture2D" uid="uid://ddknjqi303tfq" path="res://assets/STAMP BLUE VOLCANO.png" id="1_arkvq"]
+
+[resource]
+script = ExtResource("1_4em7t")
+type = 7
+img = ExtResource("1_arkvq")

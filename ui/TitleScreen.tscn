@@ -1,0 +1,54 @@
+[gd_scene load_steps=13 format=3 uid="uid://crc6g6me5hfsg"]
+
+[ext_resource type="Script" path="res://ui/TitleScreen.gd" id="1_bq4to"]
+[ext_resource type="Texture2D" uid="uid://b4cvev6jnf5kc" path="res://assets/bg_title.png" id="1_iqr1f"]
+[ext_resource type="Texture2D" uid="uid://detgkle7klx3o" path="res://assets/bg_title_2.png" id="2_n2if4"]
+[ext_resource type="Texture2D" uid="uid://bb5yg5xbkurfo" path="res://assets/GMTK23_UI_Play02_unpushed.png" id="2_qt13y"]
+[ext_resource type="Texture2D" uid="uid://buk5qlbatld8q" path="res://assets/GMTK23_UI_Play02_pushed.png" id="3_er7xw"]
+[ext_resource type="Texture2D" uid="uid://eppvcof7hppi" path="res://assets/logo_qa.png" id="6_6vs1w"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ie615"]
+texture = ExtResource("2_qt13y")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ip7ws"]
+texture = ExtResource("2_qt13y")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4kcgk"]
+texture = ExtResource("2_qt13y")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_u3vjq"]
+texture = ExtResource("2_qt13y")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i5ml6"]
+texture = ExtResource("3_er7xw")
+
+[sub_resource type="Theme" id="Theme_cajb0"]
+Button/styles/disabled = SubResource("StyleBoxTexture_ie615")
+Button/styles/focus = SubResource("StyleBoxTexture_ip7ws")
+Button/styles/hover = SubResource("StyleBoxTexture_4kcgk")
+Button/styles/normal = SubResource("StyleBoxTexture_u3vjq")
+Button/styles/pressed = SubResource("StyleBoxTexture_i5ml6")
+
+[node name="TitleScreen" type="Node2D"]
+script = ExtResource("1_bq4to")
+
+[node name="BG" type="Sprite2D" parent="."]
+texture = ExtResource("2_n2if4")
+centered = false
+
+[node name="Parcho" type="Sprite2D" parent="."]
+texture = ExtResource("1_iqr1f")
+centered = false
+
+[node name="PlayButton" type="Button" parent="."]
+offset_left = 851.0
+offset_top = 621.0
+offset_right = 1061.0
+offset_bottom = 766.0
+focus_mode = 0
+theme = SubResource("Theme_cajb0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(956, 366)
+scale = Vector2(0.313923, 0.313923)
+texture = ExtResource("6_6vs1w")

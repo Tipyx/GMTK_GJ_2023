@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://t47dlvajmxvr"
+path="res://.godot/imported/HELLO ORC-01.wav-909a40abe454c9c70319a2da166add6e.sample"
+
+[deps]
+
+source_file="res://sounds/sfxs/hellos/ORC/HELLO ORC-01.wav"
+dest_files=["res://.godot/imported/HELLO ORC-01.wav-909a40abe454c9c70319a2da166add6e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

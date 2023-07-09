@@ -1,0 +1,12 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://c8i6r0rcgfek1"]
+
+[ext_resource type="FontFile" uid="uid://c6jmmhluhpupo" path="res://assets/fonts/Warung Kopi Regular.otf" id="1_8ekq3"]
+[ext_resource type="FontFile" uid="uid://yx55oge4tb18" path="res://assets/fonts/Handwriting-Regular.otf" id="1_x5clo"]
+
+[resource]
+Label/colors/font_color = Color(0, 0, 0, 1)
+Label/font_sizes/font_size = 48
+Label/fonts/font = ExtResource("1_8ekq3")
+RichTextLabel/colors/default_color = Color(0, 0, 0, 1)
+RichTextLabel/font_sizes/normal_font_size = 48
+RichTextLabel/fonts/normal_font = ExtResource("1_x5clo")

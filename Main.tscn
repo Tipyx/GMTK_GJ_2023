@@ -1,6 +1,32 @@
-[gd_scene load_steps=2 format=3 uid="uid://doyf4ww13ced6"]
+[gd_scene load_steps=7 format=3 uid="uid://doyf4ww13ced6"]
 
 [ext_resource type="Script" path="res://Main.gd" id="1_vg23n"]
+[ext_resource type="Texture2D" uid="uid://vkv8arjs0xa4" path="res://assets/GMTK23_UI_X02_unpushed.png" id="2_j00dd"]
+[ext_resource type="Texture2D" uid="uid://beacmvbke73ea" path="res://assets/GMTK23_UI_X02_pushed.png" id="3_vg312"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_boyg3"]
+texture = ExtResource("2_j00dd")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4qrcg"]
+texture = ExtResource("3_vg312")
+
+[sub_resource type="Theme" id="Theme_jlrll"]
+Button/styles/disabled = SubResource("StyleBoxTexture_boyg3")
+Button/styles/focus = SubResource("StyleBoxTexture_boyg3")
+Button/styles/hover = SubResource("StyleBoxTexture_boyg3")
+Button/styles/normal = SubResource("StyleBoxTexture_boyg3")
+Button/styles/pressed = SubResource("StyleBoxTexture_4qrcg")
 
 [node name="Main" type="Node"]
 script = ExtResource("1_vg23n")
+
+[node name="SceneWrapper" type="Node2D" parent="."]
+
+[node name="QuitButton" type="Button" parent="."]
+offset_left = 1794.0
+offset_top = 19.0
+offset_right = 1904.0
+offset_bottom = 144.0
+focus_mode = 0
+mouse_filter = 1
+theme = SubResource("Theme_jlrll")

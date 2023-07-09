@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://b26txn8c6alnr"]
+
+[ext_resource type="Script" path="res://screens/Level.gd" id="1_s0k8l"]
+[ext_resource type="Texture2D" uid="uid://2nohbnmsixf6" path="res://assets/bg_desk.png" id="2_keukf"]
+[ext_resource type="Texture2D" uid="uid://d1e43praoivoe" path="res://assets/bg_dialog.png" id="3_c1fdv"]
+[ext_resource type="Theme" uid="uid://c8i6r0rcgfek1" path="res://ui/dialogBoxTheme.tres" id="4_pdgcg"]
+
+[node name="Level" type="Node2D"]
+script = ExtResource("1_s0k8l")
+
+[node name="BG" type="Sprite2D" parent="."]
+texture = ExtResource("2_keukf")
+centered = false
+
+[node name="QuestWrapper" type="Node2D" parent="."]
+position = Vector2(318, 463)
+
+[node name="Charac_DialogBox" type="Sprite2D" parent="."]
+position = Vector2(924, 96)
+texture = ExtResource("3_c1fdv")
+
+[node name="Charac_Label" type="RichTextLabel" parent="Charac_DialogBox"]
+offset_left = -352.0
+offset_top = -15.0
+offset_right = 392.0
+offset_bottom = 50.0
+theme = ExtResource("4_pdgcg")
+text = "Je suis un exemple de texte qui est un peu long certe, mais qui fait le job pour faire des tests."
+scroll_active = false

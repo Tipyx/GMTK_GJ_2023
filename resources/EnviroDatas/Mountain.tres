@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="QuestTypeData" load_steps=3 format=3 uid="uid://4ec0hjnrt2kv"]
+
+[ext_resource type="Texture2D" uid="uid://dn1myug6ygk4" path="res://assets/STAMP BLUE MOUNTAIN.png" id="1_1r1nt"]
+[ext_resource type="Script" path="res://resources/EnviroData.gd" id="1_77rl7"]
+
+[resource]
+script = ExtResource("1_77rl7")
+type = 3
+img = ExtResource("1_1r1nt")

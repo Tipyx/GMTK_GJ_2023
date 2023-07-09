@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dvsbqesnkcepr"
+path="res://.godot/imported/HELLO UNICORN-07.wav-08e655b1c8a871af54331afe03375842.sample"
+
+[deps]
+
+source_file="res://sounds/sfxs/hellos/UNICORN/HELLO UNICORN-07.wav"
+dest_files=["res://.godot/imported/HELLO UNICORN-07.wav-08e655b1c8a871af54331afe03375842.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

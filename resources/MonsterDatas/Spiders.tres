@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="MonsterData" load_steps=3 format=3 uid="uid://cogqbiuvqpo5t"]
+
+[ext_resource type="Texture2D" uid="uid://di06rvjxkockm" path="res://assets/GMTK23_IlluMonsters02_Spider.png" id="1_yfdvh"]
+[ext_resource type="Script" path="res://resources/MonsterData.gd" id="2_cnfmo"]
+
+[resource]
+script = ExtResource("2_cnfmo")
+type = 0
+img = ExtResource("1_yfdvh")
