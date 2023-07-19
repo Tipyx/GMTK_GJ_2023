@@ -7,6 +7,7 @@ class_name Level extends Node2D
 @export var hellos_unicorn : Array[AudioStreamWAV]
 @export var hellos_dwarf : Array[AudioStreamWAV]
 @export var hellos_elven : Array[AudioStreamWAV]
+@export var papers_sfx : Array[AudioStream]
 
 @onready var sprite_radio_off := preload("res://assets/radioOff.png")
 @onready var sprite_radio_on := preload("res://assets/radioOn.png")
@@ -263,13 +264,17 @@ func generate_quest():
 		quest.position.x = (current_quests.size() - 1) * 400
 		var pos = quest.position
 		quest.position += Vector2(0, 1000)
+		t.tween_callback(SoundManager.play_sound.bind(papers_sfx.pick_random()))
 		t.tween_property(quest, "position", pos, 0.2).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_QUART)
 		quest.rotation_degrees += randf_range(-5, 5)
 		current_quests.append(quest)
+#		SoundManager.play_sound(papers_sfx.pick_random())
 
 func _on_offer_button_pressed():
 	if not selected_quest:
 		return
+	
+	SoundManager.play_sound(preload("res://sounds/sfxs/buttonClick.wav"))
 	
 	if selected_quest.score > 0:
 		level_scores[0] += 1
@@ -296,6 +301,8 @@ func _on_offer_button_pressed():
 	timer.paused = true
 	
 func _on_valid_report_button_pressed():
+	SoundManager.play_sound(preload("res://sounds/sfxs/buttonClick.wav"))
+	
 	selected_quest = null
 	get_tree().create_tween().tween_property(current_report, "global_position", current_report.global_position + Vector2(2000, 0), 1).set_trans(Tween.TRANS_QUART).set_ease(Tween.EASE_OUT)
 	get_tree().create_tween().tween_property(valid_report_button, "modulate", Color.TRANSPARENT, 0.2)
@@ -315,6 +322,8 @@ func _on_valid_report_button_pressed():
 	timer.paused = false
 	
 func _on_skip_button_pressed():
+	SoundManager.play_sound(preload("res://sounds/sfxs/buttonClick.wav"))
+	
 	remove_quest_and_character()
 	
 	await create_tween().tween_interval(0.5).finished
@@ -329,6 +338,8 @@ func _on_skip_button_pressed():
 	skip_button.disabled = false
 	
 func _on_quest_clicked(quest:Quest):
+	SoundManager.play_sound(papers_sfx.pick_random())
+	
 	selected_quest = null
 	for q in current_quests:
 		if q == quest and not q.is_selected:
@@ -344,6 +355,7 @@ func remove_quest_and_character():
 	get_tree().create_tween().tween_property(skip_button, "modulate", Color.TRANSPARENT, 0.2)
 	for q in current_quests:
 		var t = get_tree().create_tween().set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_IN)
+		t.tween_callback(SoundManager.play_sound.bind(papers_sfx.pick_random()))
 		if q != selected_quest:
 			t.tween_property(q, "global_position", q.global_position + Vector2(0, 1000), 0.5)
 		else:

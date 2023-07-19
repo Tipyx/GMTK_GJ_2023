@@ -8,4 +8,5 @@ func _ready() -> void:
 
 func _on_play_button_pressed():
 	Global.main.new_game()
+	SoundManager.play_sound(preload("res://sounds/sfxs/buttonClick.wav"))
 	pass

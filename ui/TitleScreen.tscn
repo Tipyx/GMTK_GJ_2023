@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://crc6g6me5hfsg"]
+[gd_scene load_steps=14 format=3 uid="uid://crc6g6me5hfsg"]
 
 [ext_resource type="Script" path="res://ui/TitleScreen.gd" id="1_bq4to"]
 [ext_resource type="Texture2D" uid="uid://b4cvev6jnf5kc" path="res://assets/bg_title.png" id="1_iqr1f"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bb5yg5xbkurfo" path="res://assets/GMTK23_UI_Play02_unpushed.png" id="2_qt13y"]
 [ext_resource type="Texture2D" uid="uid://buk5qlbatld8q" path="res://assets/GMTK23_UI_Play02_pushed.png" id="3_er7xw"]
 [ext_resource type="Texture2D" uid="uid://eppvcof7hppi" path="res://assets/logo_qa.png" id="6_6vs1w"]
+[ext_resource type="AudioStream" uid="uid://bunkahbeu47ug" path="res://sounds/musics/title.mp3" id="7_4wi1p"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ie615"]
 texture = ExtResource("2_qt13y")
@@ -52,3 +53,7 @@ theme = SubResource("Theme_cajb0")
 position = Vector2(956, 366)
 scale = Vector2(0.313923, 0.313923)
 texture = ExtResource("6_6vs1w")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_4wi1p")
+autoplay = true

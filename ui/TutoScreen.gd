@@ -7,4 +7,5 @@ func _ready() -> void:
 	button.pressed.connect(_on_button_pressed)
 
 func _on_button_pressed():
+	SoundManager.play_sound(preload("res://sounds/sfxs/buttonClick.wav"))
 	Global.main.next_level()
