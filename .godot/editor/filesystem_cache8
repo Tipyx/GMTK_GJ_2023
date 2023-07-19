@@ -1,10 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1688920394
+::res://::1688923621
 default_bus_layout.tres::AudioBusLayout::6225357879577412747::1688916926::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1688917759::0::1::::<><>::
 icon.svg::CompressedTexture2D::8348057617732683014::1688742682::1688742687::1::::<><>::
 Main.gd::GDScript::-1::1688918840::0::1::::Main<>Node<>::
-Main.tscn::PackedScene::8191807491814487589::1688920394::0::1::::<><>::res://Main.gd<>uid://vkv8arjs0xa4::::res://assets/GMTK23_UI_X02_unpushed.png<>uid://beacmvbke73ea::::res://assets/GMTK23_UI_X02_pushed.png
+Main.tscn::PackedScene::8191807491814487589::1688921245::0::1::::<><>::res://Main.gd<>uid://vkv8arjs0xa4::::res://assets/GMTK23_UI_X02_unpushed.png<>uid://beacmvbke73ea::::res://assets/GMTK23_UI_X02_pushed.png
 ::res://addons/::1688823741
 ::res://addons/resources_spreadsheet_view/::1688917598
 editor_color_setter.gd::GDScript::-1::1688823741::0::1::::<>Control<>::
@@ -122,12 +122,19 @@ Handwriting-Regular.otf::FontFile::1733888764073265665::1688833359::1688833366::
 Warung Kopi Regular.otf::FontFile::6968025338966775940::1496175660::1688897643::1::::<><>::
 ::res://assets/PNG CAT124/::1688848023
 ::res://export/::1688919684
-::res://export/v0.1/::1688919791
+::res://export/v0.1/::1688923599
+::res://export/v0.1/linux/::1688922529
+::res://export/v0.1/mac/::1688922523
+::res://export/v0.1/web/::1688923620
+QA.apple-touch-icon.png::CompressedTexture2D::2627803033465328943::1688923620::1688923644::1::::<><>::
+QA.icon.png::CompressedTexture2D::8372182643233216075::1688923620::1688923644::1::::<><>::
+QA.png::CompressedTexture2D::1976911587339350286::1688923620::1688923644::1::::<><>::
+::res://export/v0.1/win/::1688922519
 ::res://gifs/::1688888388
-::res://gp_elements/::1688920397
+::res://gp_elements/::1688921247
 Character.gd::GDScript::-1::1688920097::0::1::::Character<>Node<>::
 Quest.gd::GDScript::-1::1688918996::0::1::::Quest<>Node2D<>::
-Quest.tscn::PackedScene::5955392048946672715::1688920397::0::1::::<><>::uid://cho2uuwlavba::::res://assets/bg_quest.png<>res://gp_elements/Quest.gd<>uid://c06uuqfxw2mp3::::res://resources/MonsterDatas/CarnivorousPlant.tres<>uid://cvwvjfllxw32::::res://assets/STAMP BLUE CAVE.png<>uid://bvwc2kgyrm5d1::::res://ui/questTheme.tres<>uid://ckwt5mxg85btt::::res://resources/MonsterDatas/Cats.tres<>uid://b45hk86g1o1w7::::res://resources/MonsterDatas/Childs.tres<>uid://dfhv6octrstl8::::res://resources/MonsterDatas/Dwarves.tres<>uid://d1d8ngdp2huu2::::res://assets/GMTK23_IlluMonsters02_Child.png<>uid://baa632j3uy5in::::res://resources/MonsterDatas/Elfs.tres<>uid://ds2hoi0t0yheh::::res://resources/MonsterDatas/Orks.tres<>uid://euo5huad8npb::::res://resources/MonsterDatas/Snakes.tres<>uid://cogqbiuvqpo5t::::res://resources/MonsterDatas/Spiders.tres<>uid://b02xdm4bxawh2::::res://resources/MonsterDatas/Wolves.tres<>uid://bf2c8epulxmb4::::res://resources/EnviroDatas/Cave.tres<>uid://csogr7dh4b1f4::::res://resources/EnviroDatas/Desert.tres<>uid://b38chxl1e3q6a::::res://resources/EnviroDatas/Forest.tres<>uid://cn1wdapyh20rl::::res://resources/EnviroDatas/Jungle.tres<>uid://4ec0hjnrt2kv::::res://resources/EnviroDatas/Mountain.tres<>uid://spevyd2ooqql::::res://resources/EnviroDatas/Sea.tres<>uid://4lv5qq1dy1u3::::res://resources/EnviroDatas/Swamp.tres<>uid://vivhbbtsq3hk::::res://resources/EnviroDatas/Volcano.tres<>uid://blq1ooo7hynag::::res://assets/fonts/Acadian_Runes-Regular_PERSONAL_USE.ttf
+Quest.tscn::PackedScene::5955392048946672715::1688921247::0::1::::<><>::uid://cho2uuwlavba::::res://assets/bg_quest.png<>res://gp_elements/Quest.gd<>uid://c06uuqfxw2mp3::::res://resources/MonsterDatas/CarnivorousPlant.tres<>uid://cvwvjfllxw32::::res://assets/STAMP BLUE CAVE.png<>uid://bvwc2kgyrm5d1::::res://ui/questTheme.tres<>uid://ckwt5mxg85btt::::res://resources/MonsterDatas/Cats.tres<>uid://b45hk86g1o1w7::::res://resources/MonsterDatas/Childs.tres<>uid://dfhv6octrstl8::::res://resources/MonsterDatas/Dwarves.tres<>uid://d1d8ngdp2huu2::::res://assets/GMTK23_IlluMonsters02_Child.png<>uid://baa632j3uy5in::::res://resources/MonsterDatas/Elfs.tres<>uid://ds2hoi0t0yheh::::res://resources/MonsterDatas/Orks.tres<>uid://euo5huad8npb::::res://resources/MonsterDatas/Snakes.tres<>uid://cogqbiuvqpo5t::::res://resources/MonsterDatas/Spiders.tres<>uid://b02xdm4bxawh2::::res://resources/MonsterDatas/Wolves.tres<>uid://bf2c8epulxmb4::::res://resources/EnviroDatas/Cave.tres<>uid://csogr7dh4b1f4::::res://resources/EnviroDatas/Desert.tres<>uid://b38chxl1e3q6a::::res://resources/EnviroDatas/Forest.tres<>uid://cn1wdapyh20rl::::res://resources/EnviroDatas/Jungle.tres<>uid://4ec0hjnrt2kv::::res://resources/EnviroDatas/Mountain.tres<>uid://spevyd2ooqql::::res://resources/EnviroDatas/Sea.tres<>uid://4lv5qq1dy1u3::::res://resources/EnviroDatas/Swamp.tres<>uid://vivhbbtsq3hk::::res://resources/EnviroDatas/Volcano.tres<>uid://blq1ooo7hynag::::res://assets/fonts/Acadian_Runes-Regular_PERSONAL_USE.ttf
 ::res://resources/::1688904385
 EnviroData.gd::GDScript::-1::1688851180::0::1::::EnviroData<>Resource<>::
 GameData.gd::GDScript::-1::1688890792::0::1::::GameData<>Resource<>::
@@ -152,9 +159,9 @@ Orks.tres::Resource/MonsterData::8478849915692078363::1688917747::0::1::::<><>::
 Snakes.tres::Resource/MonsterData::322946939914063339::1688917747::0::1::::<><>::uid://irb4knrw7c6d::::res://assets/GMTK23_IlluMonsters02_Snake.png<>res://resources/MonsterData.gd
 Spiders.tres::Resource/MonsterData::5768845154580203999::1688917747::0::1::::<><>::uid://di06rvjxkockm::::res://assets/GMTK23_IlluMonsters02_Spider.png<>res://resources/MonsterData.gd
 Wolves.tres::Resource/Resource::4198282497374594609::1688848364::0::1::::<><>::uid://dwadb1pmxweyc
-::res://screens/::1688920396
-Level.gd::GDScript::-1::1688920394::0::1::::Level<>Node2D<>::
-Level.tscn::PackedScene::4346710602332611943::1688920396::0::1::::<><>::res://screens/Level.gd<>uid://2nohbnmsixf6::::res://assets/bg_desk.png<>uid://q0ob1vmex31m::::res://sounds/sfxs/hellos/CAT/HELLO CAT-01.wav<>uid://4dsfe0xr0ko8::::res://sounds/sfxs/hellos/CAT/HELLO CAT-02.wav<>uid://d1e43praoivoe::::res://assets/bg_dialog.png<>uid://d4celrg0f2bhq::::res://sounds/sfxs/hellos/CAT/HELLO CAT-03.wav<>uid://c8i6r0rcgfek1::::res://ui/dialogBoxTheme.tres<>uid://knao2xjj35bj::::res://sounds/sfxs/hellos/CAT/HELLO CAT-04.wav<>uid://vkv8arjs0xa4::::res://assets/GMTK23_UI_X02_unpushed.png<>uid://beacmvbke73ea::::res://assets/GMTK23_UI_X02_pushed.png<>uid://culbd55xud5gi::::res://sounds/sfxs/hellos/CAT/HELLO CAT-05.wav<>uid://e80f52yckxaa::::res://assets/GMTK23_UI_OfferThisQuest02_unpushed.png<>uid://xndtf57hjj2l::::res://sounds/sfxs/hellos/CAT/HELLO CAT-06.wav<>uid://dx1ma0phyrr4o::::res://assets/GMTK23_UI_OfferThisQuest02_pushed.png<>uid://ctepl8drxqjpt::::res://sounds/sfxs/hellos/CAT/HELLO CAT-07.wav<>uid://c5pwdiscmfqf8::::res://sounds/sfxs/hellos/CAT/HELLO CAT.wav<>uid://cvh7re8pehuks::::res://assets/GMTK23_UI_Next02_Unpushed.png<>uid://cciovie566llh::::res://assets/GMTK23_UI_Skip02_Unpushed.png<>uid://6vvhgvbl5xa2::::res://assets/GMTK23_UI_Skip02_Pushed.png<>uid://drn4r4gd1bvjt::::res://assets/GMTK23_UI_Next02_Pushed.png<>uid://bpdi4ooagos8l::::res://assets/bourse.png<>uid://blq1ooo7hynag::::res://assets/fonts/Acadian_Runes-Regular_PERSONAL_USE.ttf<>uid://b320fl048bage::::res://sounds/musics/ambiant.mp3<>uid://eigshmil1nsa::::res://sounds/musics/radio.mp3<>uid://cvu7x2ii3jy47::::res://assets/radioOn.png
+::res://screens/::1688921960
+Level.gd::GDScript::-1::1688921960::0::1::::Level<>Node2D<>::
+Level.tscn::PackedScene::4346710602332611943::1688921960::0::1::::<><>::res://screens/Level.gd<>uid://2nohbnmsixf6::::res://assets/bg_desk.png<>uid://q0ob1vmex31m::::res://sounds/sfxs/hellos/CAT/HELLO CAT-01.wav<>uid://4dsfe0xr0ko8::::res://sounds/sfxs/hellos/CAT/HELLO CAT-02.wav<>uid://d1e43praoivoe::::res://assets/bg_dialog.png<>uid://d4celrg0f2bhq::::res://sounds/sfxs/hellos/CAT/HELLO CAT-03.wav<>uid://c8i6r0rcgfek1::::res://ui/dialogBoxTheme.tres<>uid://knao2xjj35bj::::res://sounds/sfxs/hellos/CAT/HELLO CAT-04.wav<>uid://vkv8arjs0xa4::::res://assets/GMTK23_UI_X02_unpushed.png<>uid://beacmvbke73ea::::res://assets/GMTK23_UI_X02_pushed.png<>uid://culbd55xud5gi::::res://sounds/sfxs/hellos/CAT/HELLO CAT-05.wav<>uid://e80f52yckxaa::::res://assets/GMTK23_UI_OfferThisQuest02_unpushed.png<>uid://xndtf57hjj2l::::res://sounds/sfxs/hellos/CAT/HELLO CAT-06.wav<>uid://dx1ma0phyrr4o::::res://assets/GMTK23_UI_OfferThisQuest02_pushed.png<>uid://ctepl8drxqjpt::::res://sounds/sfxs/hellos/CAT/HELLO CAT-07.wav<>uid://c5pwdiscmfqf8::::res://sounds/sfxs/hellos/CAT/HELLO CAT.wav<>uid://cvh7re8pehuks::::res://assets/GMTK23_UI_Next02_Unpushed.png<>uid://cciovie566llh::::res://assets/GMTK23_UI_Skip02_Unpushed.png<>uid://6vvhgvbl5xa2::::res://assets/GMTK23_UI_Skip02_Pushed.png<>uid://drn4r4gd1bvjt::::res://assets/GMTK23_UI_Next02_Pushed.png<>uid://c6y74mr2f7anx::::res://sounds/sfxs/hellos/HALFLING/HELLO HALFLING-01.wav<>uid://dm40cgv6h38on::::res://sounds/sfxs/hellos/HALFLING/HELLO HALFLING-02.wav<>uid://dc4ypq3r526eo::::res://sounds/sfxs/hellos/HALFLING/HELLO HALFLING-03.wav<>uid://bmxug12524qns::::res://sounds/sfxs/hellos/HALFLING/HELLO HALFLING-04.wav<>uid://bpdi4ooagos8l::::res://assets/bourse.png<>uid://blq1ooo7hynag::::res://assets/fonts/Acadian_Runes-Regular_PERSONAL_USE.ttf<>uid://bwxar44jw46m5::::res://sounds/sfxs/hellos/HALFLING/HELLO HALFLING-05.wav<>uid://b320fl048bage::::res://sounds/musics/ambiant.mp3<>uid://bj1s7nopkvsrn::::res://sounds/sfxs/hellos/HALFLING/HELLO HALFLING-06.wav<>uid://eigshmil1nsa::::res://sounds/musics/radio.mp3<>uid://d4aqfhxyakex2::::res://sounds/sfxs/hellos/HALFLING/HELLO HALFLING-07.wav<>uid://d3tsu1ywg5ehu::::res://sounds/sfxs/hellos/HALFLING/HELLO HALFLING.wav<>uid://cvu7x2ii3jy47::::res://assets/radioOn.png<>uid://cu38firvmcbbh::::res://sounds/sfxs/hellos/HUMAN/HELLO HUMAN-01.wav<>uid://dtoah1fgvu3ob::::res://sounds/sfxs/hellos/HUMAN/HELLO HUMAN-02.wav<>uid://dalig1tr166xh::::res://sounds/sfxs/hellos/HUMAN/HELLO HUMAN-03.wav<>uid://bo2dcb24p0usn::::res://sounds/sfxs/hellos/HUMAN/HELLO HUMAN-04.wav<>uid://drk4shgbn4hm0::::res://sounds/sfxs/hellos/HUMAN/HELLO HUMAN-05.wav<>uid://beob8x6hsob8t::::res://sounds/sfxs/hellos/HUMAN/HELLO HUMAN-06.wav<>uid://cgwfo743ouauu::::res://sounds/sfxs/hellos/HUMAN/HELLO HUMAN-07.wav<>uid://y3700q4p52db::::res://sounds/sfxs/hellos/HUMAN/HELLO HUMAN.wav<>uid://t47dlvajmxvr::::res://sounds/sfxs/hellos/ORC/HELLO ORC-01.wav<>uid://b80p8affiqc2t::::res://sounds/sfxs/hellos/ORC/HELLO ORC-02.wav<>uid://b6u0ae3velowe::::res://sounds/sfxs/hellos/ORC/HELLO ORC-03.wav<>uid://dojufgqcuxrn0::::res://sounds/sfxs/hellos/ORC/HELLO ORC-04.wav<>uid://dsb1803vcoi8d::::res://sounds/sfxs/hellos/ORC/HELLO ORC-05.wav<>uid://q1fk0ilghg30::::res://sounds/sfxs/hellos/ORC/HELLO ORC-06.wav<>uid://bj30yn7diml43::::res://sounds/sfxs/hellos/ORC/HELLO ORC-07.wav<>uid://c7bsqleaejsjh::::res://sounds/sfxs/hellos/ORC/HELLO ORC.wav<>uid://dgqihmrb6yusm::::res://sounds/sfxs/hellos/UNICORN/HELLO UNICORN-01.wav<>uid://d2rtx7ftj4dhb::::res://sounds/sfxs/hellos/UNICORN/HELLO UNICORN-02.wav<>uid://ca1wy1jw7v0co::::res://sounds/sfxs/hellos/UNICORN/HELLO UNICORN-03.wav<>uid://ctf8fqr3faag2::::res://sounds/sfxs/hellos/UNICORN/HELLO UNICORN-04.wav<>uid://bqlwke58yc3xu::::res://sounds/sfxs/hellos/UNICORN/HELLO UNICORN-05.wav<>uid://blpadvj8chhmm::::res://sounds/sfxs/hellos/UNICORN/HELLO UNICORN-06.wav<>uid://dvsbqesnkcepr::::res://sounds/sfxs/hellos/UNICORN/HELLO UNICORN-07.wav<>uid://cnvndgd50nkd6::::res://sounds/sfxs/hellos/UNICORN/HELLO UNICORN.wav<>uid://bvvfib6q865ac::::res://sounds/sfxs/hellos/DWARF/HELLO DWARF-01.wav<>uid://fjqj0lcmgfjo::::res://sounds/sfxs/hellos/DWARF/HELLO DWARF-02.wav<>uid://ccgg6maqrqniw::::res://sounds/sfxs/hellos/DWARF/HELLO DWARF-03.wav<>uid://cxxv4ktm65kyk::::res://sounds/sfxs/hellos/DWARF/HELLO DWARF-04.wav<>uid://suhpoviativa::::res://sounds/sfxs/hellos/DWARF/HELLO DWARF-05.wav<>uid://cqjmca66yqpmi::::res://sounds/sfxs/hellos/DWARF/HELLO DWARF-06.wav<>uid://dkvegwmwlroiw::::res://sounds/sfxs/hellos/DWARF/HELLO DWARF-07.wav<>uid://cee1d1llu15fg::::res://sounds/sfxs/hellos/DWARF/HELLO DWARF.wav<>uid://hxdkohudbxkj::::res://sounds/sfxs/hellos/ELVEN/HELLO ELVEN-01.wav<>uid://djb1utpvujfsj::::res://sounds/sfxs/hellos/ELVEN/HELLO ELVEN-02.wav<>uid://boueg76be7lcb::::res://sounds/sfxs/hellos/ELVEN/HELLO ELVEN-03.wav<>uid://bsdq58myuscft::::res://sounds/sfxs/hellos/ELVEN/HELLO ELVEN-04.wav<>uid://dhdfkyktl8ljb::::res://sounds/sfxs/hellos/ELVEN/HELLO ELVEN-05.wav<>uid://bgsvyc1v8ogx5::::res://sounds/sfxs/hellos/ELVEN/HELLO ELVEN-06.wav<>uid://degcupd4lhaua::::res://sounds/sfxs/hellos/ELVEN/HELLO ELVEN-07.wav<>uid://dihkttne1g8oy::::res://sounds/sfxs/hellos/ELVEN/HELLO ELVEN.wav
 ::res://sounds/::1688914515
 ::res://sounds/musics/::1688915705
 ambiant.mp3::AudioStreamMP3::4408973976445035720::1688914520::1688914763::1::::<><>::
@@ -171,7 +178,7 @@ HELLO CAT-05.wav::AudioStreamWAV::6199394092932519556::1688920027::1688920030::1
 HELLO CAT-06.wav::AudioStreamWAV::1641396705964550525::1688920027::1688920030::1::::<><>::
 HELLO CAT-07.wav::AudioStreamWAV::6115619044858253061::1688920027::1688920030::1::::<><>::
 HELLO CAT.wav::AudioStreamWAV::6910813922161049907::1688920027::1688920030::1::::<><>::
-::res://sounds/sfxs/hellos/DWARF/::1688920547
+::res://sounds/sfxs/hellos/DWARF/::1688920552
 HELLO DWARF-01.wav::AudioStreamWAV::3904056305426713922::1688920547::1688920552::1::::<><>::
 HELLO DWARF-02.wav::AudioStreamWAV::370512492189858372::1688920546::1688920552::1::::<><>::
 HELLO DWARF-03.wav::AudioStreamWAV::4926025613784806506::1688920546::1688920552::1::::<><>::
@@ -180,7 +187,7 @@ HELLO DWARF-05.wav::AudioStreamWAV::1305139314555752002::1688920546::1688920552:
 HELLO DWARF-06.wav::AudioStreamWAV::5915174490212419324::1688920546::1688920552::1::::<><>::
 HELLO DWARF-07.wav::AudioStreamWAV::7904757178095697366::1688920546::1688920552::1::::<><>::
 HELLO DWARF.wav::AudioStreamWAV::5063439635275738968::1688920547::1688920552::1::::<><>::
-::res://sounds/sfxs/hellos/ELVEN/::1688920547
+::res://sounds/sfxs/hellos/ELVEN/::1688920552
 HELLO ELVEN-01.wav::AudioStreamWAV::539003349780266545::1688920547::1688920552::1::::<><>::
 HELLO ELVEN-02.wav::AudioStreamWAV::7794641401362630121::1688920547::1688920552::1::::<><>::
 HELLO ELVEN-03.wav::AudioStreamWAV::3410607361129437969::1688920547::1688920552::1::::<><>::
@@ -189,7 +196,7 @@ HELLO ELVEN-05.wav::AudioStreamWAV::7657099809598320887::1688920547::1688920552:
 HELLO ELVEN-06.wav::AudioStreamWAV::2846030607206600676::1688920547::1688920552::1::::<><>::
 HELLO ELVEN-07.wav::AudioStreamWAV::7452561635836690416::1688920547::1688920552::1::::<><>::
 HELLO ELVEN.wav::AudioStreamWAV::7735865562716709384::1688920547::1688920552::1::::<><>::
-::res://sounds/sfxs/hellos/HALFLING/::1688920546
+::res://sounds/sfxs/hellos/HALFLING/::1688920552
 HELLO HALFLING-01.wav::AudioStreamWAV::7000235975830982593::1688920546::1688920552::1::::<><>::
 HELLO HALFLING-02.wav::AudioStreamWAV::8062916975010381917::1688920546::1688920552::1::::<><>::
 HELLO HALFLING-03.wav::AudioStreamWAV::7360991572399785450::1688920546::1688920552::1::::<><>::
@@ -198,7 +205,7 @@ HELLO HALFLING-05.wav::AudioStreamWAV::3978087858985548122::1688920546::16889205
 HELLO HALFLING-06.wav::AudioStreamWAV::3072944854442254911::1688920546::1688920552::1::::<><>::
 HELLO HALFLING-07.wav::AudioStreamWAV::9195719321720831433::1688920546::1688920552::1::::<><>::
 HELLO HALFLING.wav::AudioStreamWAV::9164902875710431010::1688920546::1688920552::1::::<><>::
-::res://sounds/sfxs/hellos/HUMAN/::1688920546
+::res://sounds/sfxs/hellos/HUMAN/::1688920552
 HELLO HUMAN-01.wav::AudioStreamWAV::6236433854410077277::1688920546::1688920552::1::::<><>::
 HELLO HUMAN-02.wav::AudioStreamWAV::8521765242948709949::1688920546::1688920552::1::::<><>::
 HELLO HUMAN-03.wav::AudioStreamWAV::7182468052846311433::1688920546::1688920552::1::::<><>::
@@ -207,7 +214,7 @@ HELLO HUMAN-05.wav::AudioStreamWAV::8374909484543200677::1688920546::1688920552:
 HELLO HUMAN-06.wav::AudioStreamWAV::2696198251262340265::1688920546::1688920552::1::::<><>::
 HELLO HUMAN-07.wav::AudioStreamWAV::5239721052720432380::1688920546::1688920552::1::::<><>::
 HELLO HUMAN.wav::AudioStreamWAV::1744323752182107219::1688920546::1688920552::1::::<><>::
-::res://sounds/sfxs/hellos/ORC/::1688920546
+::res://sounds/sfxs/hellos/ORC/::1688920552
 HELLO ORC-01.wav::AudioStreamWAV::1395403895350860647::1688920546::1688920552::1::::<><>::
 HELLO ORC-02.wav::AudioStreamWAV::4755231661652544657::1688920546::1688920552::1::::<><>::
 HELLO ORC-03.wav::AudioStreamWAV::4605080570680324832::1688920546::1688920552::1::::<><>::
@@ -216,7 +223,7 @@ HELLO ORC-05.wav::AudioStreamWAV::8426364544624389941::1688920546::1688920552::1
 HELLO ORC-06.wav::AudioStreamWAV::1177018088667233249::1688920546::1688920552::1::::<><>::
 HELLO ORC-07.wav::AudioStreamWAV::3077484369806720866::1688920546::1688920552::1::::<><>::
 HELLO ORC.wav::AudioStreamWAV::7022070804071362313::1688920546::1688920552::1::::<><>::
-::res://sounds/sfxs/hellos/UNICORN/::1688920546
+::res://sounds/sfxs/hellos/UNICORN/::1688920552
 HELLO UNICORN-01.wav::AudioStreamWAV::7613924050101625552::1688920546::1688920552::1::::<><>::
 HELLO UNICORN-02.wav::AudioStreamWAV::9090651636595239443::1688920546::1688920552::1::::<><>::
 HELLO UNICORN-03.wav::AudioStreamWAV::4827895202439875934::1688920546::1688920552::1::::<><>::
@@ -232,10 +239,10 @@ Global.tscn::PackedScene::-1::1688651797::0::1::::<><>::
 SoundManager.gd::GDScript::-1::1686730870::0::1::::<>Node<>::
 SoundManager.tscn::PackedScene::3557582101722422922::1688909896::0::1::::<><>::res://tools/SoundManager.gd<>uid://db06gpvr08iyx::::res://sounds/musics/themeLoop.wav
 Tools.gd::GDScript::-1::1688808931::0::1::::Tools<>Node<>::
-::res://ui/::1688919038
+::res://ui/::1688921249
 dialogBoxTheme.tres::Theme::7107502154190411654::1688897660::0::1::::<><>::uid://c6jmmhluhpupo
 EndDayScreen.gd::GDScript::-1::1688918329::0::1::::EndDayScreen<>Node2D<>::
-EndDayScreen.tscn::PackedScene::8070318933720170061::1688917251::0::1::::<><>::res://ui/EndDayScreen.gd<>uid://du366yr8r2qri::::res://assets/bg_day_3.png<>uid://dpo7ljqxsi0dv::::res://assets/bg_day_2.png<>uid://dmxiatj0rnjs5::::res://assets/bg_day_1.png<>uid://c8i6r0rcgfek1::::res://ui/dialogBoxTheme.tres<>uid://cvh7re8pehuks::::res://assets/GMTK23_UI_Next02_Unpushed.png<>uid://drn4r4gd1bvjt::::res://assets/GMTK23_UI_Next02_Pushed.png
+EndDayScreen.tscn::PackedScene::8070318933720170061::1688921249::0::1::::<><>::res://ui/EndDayScreen.gd<>uid://du366yr8r2qri::::res://assets/bg_day_3.png<>uid://dpo7ljqxsi0dv::::res://assets/bg_day_2.png<>uid://dmxiatj0rnjs5::::res://assets/bg_day_1.png<>uid://c8i6r0rcgfek1::::res://ui/dialogBoxTheme.tres<>uid://cvh7re8pehuks::::res://assets/GMTK23_UI_Next02_Unpushed.png<>uid://drn4r4gd1bvjt::::res://assets/GMTK23_UI_Next02_Pushed.png
 EndGameScreen.gd::GDScript::-1::1688918329::0::1::::EndGameScreen<>Node2D<>::
 EndGameScreen.tscn::PackedScene::4619655873318042332::1688918014::0::1::::<><>::res://ui/EndGameScreen.gd<>uid://dmxiatj0rnjs5::::res://assets/bg_day_1.png<>uid://2nohbnmsixf6::::res://assets/bg_desk.png<>uid://c8i6r0rcgfek1::::res://ui/dialogBoxTheme.tres<>uid://bbl6h4uk50570::::res://assets/exitNormal.png<>uid://52lxdrlk17h8::::res://assets/exitPressed.png
 questTheme.tres::Theme::3905972896718063592::1688885441::0::1::::<><>::uid://blq1ooo7hynag
