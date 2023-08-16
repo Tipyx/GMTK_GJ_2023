@@ -1,4 +1,6 @@
-res://screens/Level.tscn
-res://screens/Level.gd
 res://Main.tscn
+res://screens/Level.tscn
 res://ui/TitleScreen.tscn
+res://gp_elements/Quest.tscn
+res://screens/Level.gd
+res://tools/Global.gd

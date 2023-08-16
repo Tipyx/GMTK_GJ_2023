@@ -11,6 +11,7 @@ class_name Level extends Node2D
 
 @onready var sprite_radio_off := preload("res://assets/radioOff.png")
 @onready var sprite_radio_on := preload("res://assets/radioOn.png")
+@onready var sprite_radio_hs := preload("res://assets/radioHS.png")
 
 @onready var quest_ps := preload("res://gp_elements/Quest.tscn")
 @onready var quest_wrapper := $QuestWrapper
@@ -27,6 +28,8 @@ class_name Level extends Node2D
 @onready var music_button := $MusicButton
 @onready var music_button_area := $MusicButton/Area2D
 @onready var hello_sfx_player := $HelloSfxPlayer
+@onready var ambiant_sounds := $AmbiantSounds
+@onready var radio_sounds := $RadioSound
 
 var current_character : Character
 
@@ -175,11 +178,23 @@ func _ready() -> void:
 	
 func _on_music_button_pressed(_viewport, event:InputEvent, _shape_idx):
 	if event is InputEventMouseButton and event.pressed:
-		Global.sound_is_mute = !Global.sound_is_mute
+		if Global.sound_status == Global.Sound_Status.All:
+			Global.sound_status = Global.Sound_Status.Ambiant
+			music_button.texture = sprite_radio_off
+			ambiant_sounds.stream_paused = false
+			radio_sounds.stream_paused = true
+		elif Global.sound_status == Global.Sound_Status.Ambiant:
+			Global.sound_status = Global.Sound_Status.Off
+			music_button.texture = sprite_radio_hs
+			ambiant_sounds.stream_paused = true
+			radio_sounds.stream_paused = true
+		else:
+			Global.sound_status = Global.Sound_Status.All
+			music_button.texture = sprite_radio_on
+			ambiant_sounds.stream_paused = false
+			radio_sounds.stream_paused = false
 		
-		music_button.texture = sprite_radio_off if Global.sound_is_mute else sprite_radio_on
-		
-		AudioServer.set_bus_mute(0, Global.sound_is_mute)
+		AudioServer.set_bus_mute(0, Global.sound_status == Global.Sound_Status.Off)
 	
 func _timer_out():
 	if Global.currentDay < 5:
