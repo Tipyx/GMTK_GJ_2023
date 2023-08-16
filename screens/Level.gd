@@ -12,6 +12,7 @@ class_name Level extends Node2D
 @onready var sprite_radio_off := preload("res://assets/radioOff.png")
 @onready var sprite_radio_on := preload("res://assets/radioOn.png")
 @onready var sprite_radio_hs := preload("res://assets/radioHS.png")
+@onready var radio_button_click := preload("res://sounds/sfxs/radioButtonClick.wav")
 
 @onready var quest_ps := preload("res://gp_elements/Quest.tscn")
 @onready var quest_wrapper := $QuestWrapper
@@ -194,6 +195,7 @@ func _on_music_button_pressed(_viewport, event:InputEvent, _shape_idx):
 			ambiant_sounds.stream_paused = false
 			radio_sounds.stream_paused = false
 		
+		SoundManager.play_sound(radio_button_click)
 		AudioServer.set_bus_mute(0, Global.sound_status == Global.Sound_Status.Off)
 	
 func _timer_out():
