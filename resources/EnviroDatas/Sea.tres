@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="QuestTypeData" load_steps=3 format=3 uid="uid://spevyd2ooqql"]
+[gd_resource type="Resource" script_class="EnviroData" load_steps=3 format=3 uid="uid://spevyd2ooqql"]
 
 [ext_resource type="Texture2D" uid="uid://b7vnspi6rabyo" path="res://assets/STAMP BLUE SEA.png" id="1_b1sp2"]
 [ext_resource type="Script" path="res://resources/EnviroData.gd" id="1_gbkj0"]

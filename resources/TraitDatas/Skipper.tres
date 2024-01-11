@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="TraitData" load_steps=3 format=3 uid="uid://cqqgg7rtr4wp6"]
+
+[ext_resource type="Resource" uid="uid://spevyd2ooqql" path="res://resources/EnviroDatas/Sea.tres" id="1_4xxxa"]
+[ext_resource type="Script" path="res://resources/TraitData.gd" id="1_mwg1g"]
+
+[resource]
+script = ExtResource("1_mwg1g")
+type = 19
+desc = "I used to be a skipper in another life."
+double_negative = Array[Resource]([])
+simple_negative = Array[Resource]([])
+simple_positive = Array[Resource]([])
+double_positive = Array[Resource]([ExtResource("1_4xxxa")])

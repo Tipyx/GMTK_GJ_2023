@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="JobData" load_steps=6 format=3 uid="uid://cseckff0q7pxg"]
+
+[ext_resource type="Resource" uid="uid://d0o858n3y07ub" path="res://resources/QuestDatas/Dungeon.tres" id="1_1v78s"]
+[ext_resource type="Script" path="res://resources/JobData.gd" id="1_78p83"]
+[ext_resource type="Resource" uid="uid://euo5huad8npb" path="res://resources/MonsterDatas/Snakes.tres" id="2_ju5ly"]
+[ext_resource type="Resource" uid="uid://c1ncssfqwp5vd" path="res://resources/QuestDatas/Fight.tres" id="4_4xf5v"]
+[ext_resource type="Resource" uid="uid://cvifgf0bblpvf" path="res://resources/QuestDatas/Robbery.tres" id="5_a2hk3"]
+
+[resource]
+script = ExtResource("1_78p83")
+charac_class = 2
+double_negative = Array[Resource]([ExtResource("1_1v78s")])
+simple_negative = Array[Resource]([ExtResource("4_4xf5v")])
+simple_positive = Array[Resource]([ExtResource("5_a2hk3")])
+double_positive = Array[Resource]([ExtResource("2_ju5ly")])

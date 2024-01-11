@@ -1,5 +1,17 @@
-extends Resource
 class_name MonsterData
+extends Resource
 
-@export var type := Quest.Quest_Monster.Cats
+enum Monsters {
+	SPIDERS,
+	SNAKES,
+	CHILDS,
+	CATS,
+	ORKS,
+	DWARVES,
+	ELVES,
+	CARNIVOROUS_PLANTS,
+	WOLVES,
+}
+
+@export var type := Monsters.CATS
 @export var img : Texture2D

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="TraitData" load_steps=4 format=3 uid="uid://dlyjp3pf36rs8"]
+
+[ext_resource type="Resource" uid="uid://4ec0hjnrt2kv" path="res://resources/EnviroDatas/Mountain.tres" id="1_gmxkq"]
+[ext_resource type="Script" path="res://resources/TraitData.gd" id="1_j3rs6"]
+[ext_resource type="Resource" uid="uid://vivhbbtsq3hk" path="res://resources/EnviroDatas/Volcano.tres" id="2_wo4yq"]
+
+[resource]
+script = ExtResource("1_j3rs6")
+type = 11
+desc = "I might not be reassured at heights. One meter off the ground wasn't that bad, was it?"
+double_negative = Array[Resource]([ExtResource("1_gmxkq"), ExtResource("2_wo4yq")])
+simple_negative = Array[Resource]([])
+simple_positive = Array[Resource]([])
+double_positive = Array[Resource]([])

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="JobData" load_steps=8 format=3 uid="uid://bgyhcick0673b"]
+
+[ext_resource type="Resource" uid="uid://d0o858n3y07ub" path="res://resources/QuestDatas/Dungeon.tres" id="1_00kqu"]
+[ext_resource type="Script" path="res://resources/JobData.gd" id="1_78r41"]
+[ext_resource type="Resource" uid="uid://c1ncssfqwp5vd" path="res://resources/QuestDatas/Fight.tres" id="2_naf03"]
+[ext_resource type="Resource" uid="uid://ckwt5mxg85btt" path="res://resources/MonsterDatas/Cats.tres" id="3_y8m08"]
+[ext_resource type="Resource" uid="uid://cvifgf0bblpvf" path="res://resources/QuestDatas/Robbery.tres" id="5_mrbow"]
+[ext_resource type="Resource" uid="uid://byl334mfocxgc" path="res://resources/QuestDatas/Picking.tres" id="6_610ov"]
+[ext_resource type="Resource" uid="uid://dfr58bhb5pvlv" path="res://resources/QuestDatas/Excavation.tres" id="7_2ghmd"]
+
+[resource]
+script = ExtResource("1_78r41")
+charac_class = 3
+double_negative = Array[Resource]([ExtResource("1_00kqu"), ExtResource("2_naf03")])
+simple_negative = Array[Resource]([ExtResource("5_mrbow")])
+simple_positive = Array[Resource]([ExtResource("6_610ov"), ExtResource("7_2ghmd")])
+double_positive = Array[Resource]([ExtResource("3_y8m08")])

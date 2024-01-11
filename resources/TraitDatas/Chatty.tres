@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="TraitData" load_steps=3 format=3 uid="uid://bomvbvrwk5isq"]
+
+[ext_resource type="Resource" uid="uid://c4iabpj6wyxff" path="res://resources/QuestDatas/Escort.tres" id="1_epwed"]
+[ext_resource type="Script" path="res://resources/TraitData.gd" id="1_mha13"]
+
+[resource]
+script = ExtResource("1_mha13")
+type = 18
+desc = "My mother would tell you that I'm very talkative. I'd say that I like to talk and exchange ideas with people. What's wrong with that?"
+double_negative = Array[Resource]([ExtResource("1_epwed")])
+simple_negative = Array[Resource]([])
+simple_positive = Array[Resource]([])
+double_positive = Array[Resource]([])

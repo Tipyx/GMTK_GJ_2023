@@ -1,6 +1,5 @@
 class_name Level extends Node2D
 
-@export var hellos_cat : Array[AudioStreamWAV]
 @export var hellos_halfing : Array[AudioStreamWAV]
 @export var hellos_human : Array[AudioStreamWAV]
 @export var hellos_orc : Array[AudioStreamWAV]
@@ -46,28 +45,6 @@ var base_format_texts = [
 	"Hello! You can call me {name}. I am born {number} years ago among the {specie}. I am now a {class}. {trait}",
 	"Hi there! My name is {name}. I am a {class} looking for money, so basically, jobs... If you missed it, I am a {specie}. {trait}"
 ]
-var trait_descriptions = {
-	Character.Charac_Trait.Claustrophobic : "Oh, and yes, I am a bit claustrophobic...",
-	Character.Charac_Trait.Pollen_Allergy : "I am having some trouble with my pollen allergy, but I am doing well outside of that.",
-	Character.Charac_Trait.Prebyopic : "I lost my glasses yesterday and have some trouble with my near vision.",
-	Character.Charac_Trait.Honest : "Something you should know is that I always play by the rules.",
-	Character.Charac_Trait.Fast_Runner : "Do you know Forest Grump? I am faster than him.",
-	Character.Charac_Trait.Hates_Heat : "I'm not too fond of summer, and hate working when it's hot.",
-	Character.Charac_Trait.Skittish : "I am a skittish person, for sure.",
-	Character.Charac_Trait.Agile : "I practised a lot of gymnastics when I was a kid.",
-	Character.Charac_Trait.Hooking : "I might have learned how to pick a lock. But I have very noble intentions, I promise!",
-	Character.Charac_Trait.Light_Steps : "I've always been told I walk unobtrusively. I'm always careful where I step.",
-	Character.Charac_Trait.Supernatural_Hearing : "I can hear a mouse walking at 205 meters. Yes, I've done some tests. Yes, I have too much free time. It's why I am here.",
-	Character.Charac_Trait.Survival : "I learned to survive in hostile environments and face danger.",
-	Character.Charac_Trait.Acrophobia : "I might not be reassured at heights. One meter off the ground wasn't that bad, was it?",
-	Character.Charac_Trait.Discretion : "People never notice me, as if I were transparent.",
-	Character.Charac_Trait.Clumsy : "I am all fingers and thumbs.",
-	Character.Charac_Trait.Antropophobic : "I hate people. It costs me a lot to come here.",
-	Character.Charac_Trait.Aracnophobia : "I am fearless, except if there is a spider in the room.",
-	Character.Charac_Trait.Ophiophobia : "I suffer from ophiophobia.",
-	Character.Charac_Trait.Chatty : "My mother would tell you that I'm very talkative. I'd say that I like to talk and exchange ideas with people. What's wrong with that?",
-	Character.Charac_Trait.Skipper : "I used to be a skipper in another life.",
-}
 
 var first_names = [
 	"Kahless",
@@ -215,21 +192,8 @@ func generate_new_character():
 	
 	var base_text = base_format_texts.pick_random()
 	current_character.complete_name = first_names.pick_random() + " " + last_names.pick_random()
-	charac_label.text = base_text.format({"name":current_character.complete_name, "number":randi_range(20, 300), "class":current_character.charac_class_name(), "specie":current_character.charac_specie_name(), "trait":trait_descriptions[current_character.charac_trait]})
-	if current_character.charac_specie == Character.Charac_Specie.Cat:
-		hello_sfx_player.stream = hellos_cat.pick_random()
-	if current_character.charac_specie == Character.Charac_Specie.Halfling:
-		hello_sfx_player.stream = hellos_halfing.pick_random()
-	if current_character.charac_specie == Character.Charac_Specie.Human:
-		hello_sfx_player.stream = hellos_human.pick_random()
-	if current_character.charac_specie == Character.Charac_Specie.Ork:
-		hello_sfx_player.stream = hellos_orc.pick_random()
-	if current_character.charac_specie == Character.Charac_Specie.Unicorn:
-		hello_sfx_player.stream = hellos_unicorn.pick_random()
-	if current_character.charac_specie == Character.Charac_Specie.Dwarf:
-		hello_sfx_player.stream = hellos_dwarf.pick_random()
-	if current_character.charac_specie == Character.Charac_Specie.Elf:
-		hello_sfx_player.stream = hellos_elven.pick_random()
+	charac_label.text = base_text.format({"name":current_character.complete_name, "number":randi_range(20, 300), "class":current_character.job.name.capitalize(), "specie":current_character.specie.name.capitalize(), "trait":current_character.traitData.desc})
+	hello_sfx_player.stream = current_character.specie.hellos_sfx.pick_random()
 	hello_sfx_player.play()
 	
 func generate_quest():

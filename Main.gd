@@ -20,7 +20,12 @@ func _ready() -> void:
 	quit_button.pressed.connect(_on_quit_button_pressed)
 	
 #	SoundManager.play_music()
-	
+
+	#for jd in 
+	#for jd in Global.game_data.jobDatas:
+		#for t in jd.double_negative:
+			#print(t, t is QuestData, t is MonsterData)
+
 	go_to_title_screen()
 	
 func _on_quit_button_pressed():
@@ -42,7 +47,7 @@ func clean():
 	if end_game_screen:
 		end_game_screen.queue_free()
 		end_game_screen = null
-
+		
 func go_to_title_screen():
 	clean()
 	

@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="SpecieData" load_steps=18 format=3 uid="uid://bbm12ec2hw8og"]
+
+[ext_resource type="Script" path="res://resources/SpecieData.gd" id="1_f5vys"]
+[ext_resource type="Resource" uid="uid://dfhv6octrstl8" path="res://resources/MonsterDatas/Dwarves.tres" id="1_m61iw"]
+[ext_resource type="Resource" uid="uid://byl334mfocxgc" path="res://resources/QuestDatas/Picking.tres" id="2_2iegm"]
+[ext_resource type="Resource" uid="uid://4ec0hjnrt2kv" path="res://resources/EnviroDatas/Mountain.tres" id="3_ccei2"]
+[ext_resource type="Resource" uid="uid://baa632j3uy5in" path="res://resources/MonsterDatas/Elfs.tres" id="4_c7asb"]
+[ext_resource type="AudioStream" uid="uid://bvvfib6q865ac" path="res://sounds/sfxs/hellos/DWARF/HELLO DWARF-01.wav" id="5_sgh6i"]
+[ext_resource type="AudioStream" uid="uid://fjqj0lcmgfjo" path="res://sounds/sfxs/hellos/DWARF/HELLO DWARF-02.wav" id="6_2c211"]
+[ext_resource type="AudioStream" uid="uid://ccgg6maqrqniw" path="res://sounds/sfxs/hellos/DWARF/HELLO DWARF-03.wav" id="7_a3a4u"]
+[ext_resource type="AudioStream" uid="uid://cxxv4ktm65kyk" path="res://sounds/sfxs/hellos/DWARF/HELLO DWARF-04.wav" id="8_4unqi"]
+[ext_resource type="AudioStream" uid="uid://suhpoviativa" path="res://sounds/sfxs/hellos/DWARF/HELLO DWARF-05.wav" id="9_q4i1k"]
+[ext_resource type="AudioStream" uid="uid://cqjmca66yqpmi" path="res://sounds/sfxs/hellos/DWARF/HELLO DWARF-06.wav" id="10_2fg48"]
+[ext_resource type="AudioStream" uid="uid://dkvegwmwlroiw" path="res://sounds/sfxs/hellos/DWARF/HELLO DWARF-07.wav" id="11_muoy5"]
+[ext_resource type="AudioStream" uid="uid://cee1d1llu15fg" path="res://sounds/sfxs/hellos/DWARF/HELLO DWARF.wav" id="12_bsdbf"]
+[ext_resource type="Resource" uid="uid://b38chxl1e3q6a" path="res://resources/EnviroDatas/Forest.tres" id="14_mm4hy"]
+[ext_resource type="Resource" uid="uid://spevyd2ooqql" path="res://resources/EnviroDatas/Sea.tres" id="15_633ao"]
+[ext_resource type="Resource" uid="uid://bf2c8epulxmb4" path="res://resources/EnviroDatas/Cave.tres" id="16_tjun8"]
+[ext_resource type="Resource" uid="uid://ds2hoi0t0yheh" path="res://resources/MonsterDatas/Orks.tres" id="17_47b8d"]
+
+[resource]
+script = ExtResource("1_f5vys")
+type = 6
+hellos_sfx = Array[AudioStreamWAV]([ExtResource("5_sgh6i"), ExtResource("6_2c211"), ExtResource("7_a3a4u"), ExtResource("8_4unqi"), ExtResource("9_q4i1k"), ExtResource("10_2fg48"), ExtResource("11_muoy5"), ExtResource("12_bsdbf")])
+double_negative = Array[Resource]([ExtResource("1_m61iw"), ExtResource("2_2iegm")])
+simple_negative = Array[Resource]([ExtResource("14_mm4hy"), ExtResource("15_633ao")])
+simple_positive = Array[Resource]([ExtResource("16_tjun8"), ExtResource("17_47b8d")])
+double_positive = Array[Resource]([ExtResource("3_ccei2"), ExtResource("4_c7asb")])

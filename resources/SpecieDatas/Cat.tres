@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="SpecieData" load_steps=16 format=3 uid="uid://w37mnfweh2xf"]
+
+[ext_resource type="Resource" uid="uid://ckwt5mxg85btt" path="res://resources/MonsterDatas/Cats.tres" id="1_4ul8s"]
+[ext_resource type="Script" path="res://resources/SpecieData.gd" id="1_uts7j"]
+[ext_resource type="Resource" uid="uid://spevyd2ooqql" path="res://resources/EnviroDatas/Sea.tres" id="2_sit0d"]
+[ext_resource type="Resource" uid="uid://cvifgf0bblpvf" path="res://resources/QuestDatas/Robbery.tres" id="3_o5l0m"]
+[ext_resource type="Resource" uid="uid://b45hk86g1o1w7" path="res://resources/MonsterDatas/Childs.tres" id="4_q1v0w"]
+[ext_resource type="AudioStream" uid="uid://q0ob1vmex31m" path="res://sounds/sfxs/hellos/CAT/HELLO CAT-01.wav" id="5_qad06"]
+[ext_resource type="AudioStream" uid="uid://4dsfe0xr0ko8" path="res://sounds/sfxs/hellos/CAT/HELLO CAT-02.wav" id="6_a5sn3"]
+[ext_resource type="AudioStream" uid="uid://d4celrg0f2bhq" path="res://sounds/sfxs/hellos/CAT/HELLO CAT-03.wav" id="7_yoisq"]
+[ext_resource type="AudioStream" uid="uid://knao2xjj35bj" path="res://sounds/sfxs/hellos/CAT/HELLO CAT-04.wav" id="8_sdww1"]
+[ext_resource type="AudioStream" uid="uid://culbd55xud5gi" path="res://sounds/sfxs/hellos/CAT/HELLO CAT-05.wav" id="9_voroi"]
+[ext_resource type="AudioStream" uid="uid://xndtf57hjj2l" path="res://sounds/sfxs/hellos/CAT/HELLO CAT-06.wav" id="10_5lqt6"]
+[ext_resource type="AudioStream" uid="uid://ctepl8drxqjpt" path="res://sounds/sfxs/hellos/CAT/HELLO CAT-07.wav" id="11_wswg8"]
+[ext_resource type="AudioStream" uid="uid://c5pwdiscmfqf8" path="res://sounds/sfxs/hellos/CAT/HELLO CAT.wav" id="12_d7hyp"]
+[ext_resource type="Resource" uid="uid://4lv5qq1dy1u3" path="res://resources/EnviroDatas/Swamp.tres" id="14_wfwkb"]
+[ext_resource type="Resource" uid="uid://dfr58bhb5pvlv" path="res://resources/QuestDatas/Excavation.tres" id="15_a4xy4"]
+
+[resource]
+script = ExtResource("1_uts7j")
+type = 4
+hellos_sfx = Array[AudioStreamWAV]([ExtResource("5_qad06"), ExtResource("6_a5sn3"), ExtResource("7_yoisq"), ExtResource("8_sdww1"), ExtResource("9_voroi"), ExtResource("10_5lqt6"), ExtResource("11_wswg8"), ExtResource("12_d7hyp")])
+double_negative = Array[Resource]([ExtResource("1_4ul8s"), ExtResource("2_sit0d")])
+simple_negative = Array[Resource]([ExtResource("14_wfwkb")])
+simple_positive = Array[Resource]([ExtResource("15_a4xy4")])
+double_positive = Array[Resource]([ExtResource("3_o5l0m"), ExtResource("4_q1v0w")])

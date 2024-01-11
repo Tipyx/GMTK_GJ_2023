@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="TraitData" load_steps=3 format=3 uid="uid://dml442n7mylyu"]
+
+[ext_resource type="Resource" uid="uid://c3gt20e1lhasi" path="res://resources/QuestDatas/Delivery.tres" id="1_5tebv"]
+[ext_resource type="Script" path="res://resources/TraitData.gd" id="1_ekbeg"]
+
+[resource]
+script = ExtResource("1_ekbeg")
+type = 3
+desc = "Do you know Forest Grump? I am faster than him."
+double_negative = Array[Resource]([])
+simple_negative = Array[Resource]([])
+simple_positive = Array[Resource]([])
+double_positive = Array[Resource]([ExtResource("1_5tebv")])

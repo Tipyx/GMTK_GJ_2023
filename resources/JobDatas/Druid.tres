@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="JobData" load_steps=9 format=3 uid="uid://dt31qlppi2dlc"]
+
+[ext_resource type="Resource" uid="uid://b02xdm4bxawh2" path="res://resources/MonsterDatas/Wolves.tres" id="1_mw2tt"]
+[ext_resource type="Script" path="res://resources/JobData.gd" id="1_vi0ob"]
+[ext_resource type="Resource" uid="uid://ckwt5mxg85btt" path="res://resources/MonsterDatas/Cats.tres" id="2_v13ck"]
+[ext_resource type="Resource" uid="uid://byl334mfocxgc" path="res://resources/QuestDatas/Picking.tres" id="3_vnbic"]
+[ext_resource type="Resource" uid="uid://euo5huad8npb" path="res://resources/MonsterDatas/Snakes.tres" id="5_7qdjb"]
+[ext_resource type="Resource" uid="uid://cogqbiuvqpo5t" path="res://resources/MonsterDatas/Spiders.tres" id="6_m5ifk"]
+[ext_resource type="Resource" uid="uid://whdqi4ukvpc" path="res://resources/QuestDatas/Rescue.tres" id="7_6grp0"]
+[ext_resource type="Resource" uid="uid://c4iabpj6wyxff" path="res://resources/QuestDatas/Escort.tres" id="8_87qno"]
+
+[resource]
+script = ExtResource("1_vi0ob")
+charac_class = 5
+double_negative = Array[Resource]([ExtResource("1_mw2tt"), ExtResource("2_v13ck")])
+simple_negative = Array[Resource]([ExtResource("5_7qdjb"), ExtResource("6_m5ifk")])
+simple_positive = Array[Resource]([ExtResource("7_6grp0"), ExtResource("8_87qno")])
+double_positive = Array[Resource]([ExtResource("3_vnbic")])

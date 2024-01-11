@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="QuestTypeData" load_steps=3 format=3 uid="uid://csogr7dh4b1f4"]
+[gd_resource type="Resource" script_class="EnviroData" load_steps=3 format=3 uid="uid://csogr7dh4b1f4"]
 
 [ext_resource type="Script" path="res://resources/EnviroData.gd" id="1_48g2w"]
 [ext_resource type="Texture2D" uid="uid://bm13jeahk7gph" path="res://assets/STAMP BLUE DESERT.png" id="1_fb83e"]

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="TraitData" load_steps=5 format=3 uid="uid://gmcp4b5notto"]
+
+[ext_resource type="Resource" uid="uid://cvifgf0bblpvf" path="res://resources/QuestDatas/Robbery.tres" id="1_3s6hp"]
+[ext_resource type="Script" path="res://resources/TraitData.gd" id="1_g32ho"]
+[ext_resource type="Resource" uid="uid://c3gt20e1lhasi" path="res://resources/QuestDatas/Delivery.tres" id="3_78g42"]
+[ext_resource type="Resource" uid="uid://dfr58bhb5pvlv" path="res://resources/QuestDatas/Excavation.tres" id="4_36g5c"]
+
+[resource]
+script = ExtResource("1_g32ho")
+type = 13
+desc = "I am all fingers and thumbs."
+double_negative = Array[Resource]([ExtResource("1_3s6hp")])
+simple_negative = Array[Resource]([ExtResource("3_78g42"), ExtResource("4_36g5c")])
+simple_positive = Array[Resource]([])
+double_positive = Array[Resource]([])

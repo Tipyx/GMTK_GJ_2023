@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="TraitData" load_steps=5 format=3 uid="uid://362pj14a07kj"]
+
+[ext_resource type="Resource" uid="uid://b38chxl1e3q6a" path="res://resources/EnviroDatas/Forest.tres" id="1_61w7p"]
+[ext_resource type="Script" path="res://resources/TraitData.gd" id="1_ls6hl"]
+[ext_resource type="Resource" uid="uid://byl334mfocxgc" path="res://resources/QuestDatas/Picking.tres" id="2_eq4mx"]
+[ext_resource type="Resource" uid="uid://c06uuqfxw2mp3" path="res://resources/MonsterDatas/CarnivorousPlant.tres" id="4_ipcdd"]
+
+[resource]
+script = ExtResource("1_ls6hl")
+type = 1
+desc = "I am having some trouble with my pollen allergy, but I am doing well outside of that."
+double_negative = Array[Resource]([ExtResource("1_61w7p"), ExtResource("2_eq4mx")])
+simple_negative = Array[Resource]([ExtResource("4_ipcdd")])
+simple_positive = Array[Resource]([])
+double_positive = Array[Resource]([])

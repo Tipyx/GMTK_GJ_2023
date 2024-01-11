@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="TraitData" load_steps=5 format=3 uid="uid://diq6k03er8ick"]
+
+[ext_resource type="Resource" uid="uid://b45hk86g1o1w7" path="res://resources/MonsterDatas/Childs.tres" id="1_lpf86"]
+[ext_resource type="Script" path="res://resources/TraitData.gd" id="1_vn2d3"]
+[ext_resource type="Resource" uid="uid://ckwt5mxg85btt" path="res://resources/MonsterDatas/Cats.tres" id="2_jw200"]
+[ext_resource type="Resource" uid="uid://bf2c8epulxmb4" path="res://resources/EnviroDatas/Cave.tres" id="4_qpy4g"]
+
+[resource]
+script = ExtResource("1_vn2d3")
+type = 9
+desc = "I can hear a mouse walking at 205 meters. Yes, I've done some tests. Yes, I have too much free time. It's why I am here."
+double_negative = Array[Resource]([ExtResource("1_lpf86")])
+simple_negative = Array[Resource]([])
+simple_positive = Array[Resource]([ExtResource("4_qpy4g")])
+double_positive = Array[Resource]([ExtResource("2_jw200")])

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="TraitData" load_steps=5 format=3 uid="uid://6407rite8f04"]
+
+[ext_resource type="Script" path="res://resources/TraitData.gd" id="1_cli40"]
+[ext_resource type="Resource" uid="uid://cvifgf0bblpvf" path="res://resources/QuestDatas/Robbery.tres" id="1_jhel8"]
+[ext_resource type="Resource" uid="uid://4lv5qq1dy1u3" path="res://resources/EnviroDatas/Swamp.tres" id="3_righ1"]
+[ext_resource type="Resource" uid="uid://cn1wdapyh20rl" path="res://resources/EnviroDatas/Jungle.tres" id="4_21pns"]
+
+[resource]
+script = ExtResource("1_cli40")
+type = 6
+desc = "I practised a lot of gymnastics when I was a kid."
+double_negative = Array[Resource]([])
+simple_negative = Array[Resource]([])
+simple_positive = Array[Resource]([ExtResource("3_righ1"), ExtResource("4_21pns")])
+double_positive = Array[Resource]([ExtResource("1_jhel8")])

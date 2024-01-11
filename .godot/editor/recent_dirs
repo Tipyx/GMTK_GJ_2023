@@ -1,3 +1,10 @@
+res://resources/TraitDatas
+res://resources/SpecieDatas
+C:/Users/Utilisateur/Documents/Dev/Godot/Godot_4_2/GMTK_GJ_2023
+res://resources/JobDatas
+res://resources
+res://resources/QuestDatas
+res://resources/EnviroDatas
 C:/Users/Utilisateur/Documents/Dev/Godot/Godot_4_1/GMTK_GJ_2023/export/v0.1/web
 C:/Users/Utilisateur/Documents/Dev/Godot/Godot_4_1/GMTK_GJ_2023/export/v0.1/linux
 C:/Users/Utilisateur/Documents/Dev/Godot/Godot_4_1/GMTK_GJ_2023/export/v0.1/mac
@@ -6,7 +13,6 @@ res://assets
 C:/Users/Utilisateur/Documents/Dev/Godot/Godot_4_1/GMTK_GJ_2023/export/v0.1
 C:/Users/Utilisateur/Documents/Dev/Godot/Godot_4_1/GMTK_GJ_2023/export
 res://ui
-res://resources
 res://gp_elements
 res://screens
 res://tools

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="TraitData" load_steps=3 format=3 uid="uid://cvc1tmvarircl"]
+
+[ext_resource type="Resource" uid="uid://cvifgf0bblpvf" path="res://resources/QuestDatas/Robbery.tres" id="1_54iwx"]
+[ext_resource type="Script" path="res://resources/TraitData.gd" id="1_87dwa"]
+
+[resource]
+script = ExtResource("1_87dwa")
+type = 7
+desc = "I might have learned how to pick a lock. But I have very noble intentions, I promise!"
+double_negative = Array[Resource]([])
+simple_negative = Array[Resource]([])
+simple_positive = Array[Resource]([])
+double_positive = Array[Resource]([ExtResource("1_54iwx")])

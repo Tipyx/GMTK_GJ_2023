@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="TraitData" load_steps=4 format=3 uid="uid://fn0brikvl6ei"]
+
+[ext_resource type="Resource" uid="uid://cvifgf0bblpvf" path="res://resources/QuestDatas/Robbery.tres" id="1_o4rib"]
+[ext_resource type="Script" path="res://resources/TraitData.gd" id="1_ox3q6"]
+[ext_resource type="Resource" uid="uid://4lv5qq1dy1u3" path="res://resources/EnviroDatas/Swamp.tres" id="2_26rga"]
+
+[resource]
+script = ExtResource("1_ox3q6")
+type = 8
+desc = "I've always been told I walk unobtrusively. I'm always careful where I step."
+double_negative = Array[Resource]([])
+simple_negative = Array[Resource]([])
+simple_positive = Array[Resource]([])
+double_positive = Array[Resource]([ExtResource("1_o4rib"), ExtResource("2_26rga")])

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="TraitData" load_steps=4 format=3 uid="uid://7qmw2cn3mxkf"]
+
+[ext_resource type="Script" path="res://resources/TraitData.gd" id="1_36ysj"]
+[ext_resource type="Resource" uid="uid://cvifgf0bblpvf" path="res://resources/QuestDatas/Robbery.tres" id="1_iko6b"]
+[ext_resource type="Resource" uid="uid://c3gt20e1lhasi" path="res://resources/QuestDatas/Delivery.tres" id="2_qm4lg"]
+
+[resource]
+script = ExtResource("1_36ysj")
+type = 17
+desc = "Something you should know is that I always play by the rules."
+double_negative = Array[Resource]([ExtResource("1_iko6b")])
+simple_negative = Array[Resource]([])
+simple_positive = Array[Resource]([])
+double_positive = Array[Resource]([ExtResource("2_qm4lg")])

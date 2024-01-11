@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="QuestTypeData" load_steps=3 format=3 uid="uid://4lv5qq1dy1u3"]
+[gd_resource type="Resource" script_class="EnviroData" load_steps=3 format=3 uid="uid://4lv5qq1dy1u3"]
 
 [ext_resource type="Texture2D" uid="uid://cs1i4qvnqdth4" path="res://assets/STAMP BLUE SWAMP.png" id="1_hw1wm"]
 [ext_resource type="Script" path="res://resources/EnviroData.gd" id="1_hx8ct"]

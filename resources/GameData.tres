@@ -1,204 +1,70 @@
-[gd_resource type="Resource" script_class="GameData" load_steps=2 format=3 uid="uid://dq3i3jpcg2ggd"]
+[gd_resource type="Resource" script_class="GameData" load_steps=60 format=3 uid="uid://dq3i3jpcg2ggd"]
 
+[ext_resource type="Resource" uid="uid://bf2c8epulxmb4" path="res://resources/EnviroDatas/Cave.tres" id="1_8sr6k"]
 [ext_resource type="Script" path="res://resources/GameData.gd" id="1_goeon"]
+[ext_resource type="Resource" uid="uid://cseckff0q7pxg" path="res://resources/JobDatas/Bard.tres" id="1_inech"]
+[ext_resource type="Resource" uid="uid://dbysnjymdtii4" path="res://resources/JobDatas/Warrior.tres" id="1_ypesl"]
+[ext_resource type="Resource" uid="uid://csogr7dh4b1f4" path="res://resources/EnviroDatas/Desert.tres" id="2_g220f"]
+[ext_resource type="Resource" uid="uid://dt31qlppi2dlc" path="res://resources/JobDatas/Druid.tres" id="2_u06ey"]
+[ext_resource type="Resource" uid="uid://bnrwu2xf38xgl" path="res://resources/JobDatas/Peasant.tres" id="3_bsk53"]
+[ext_resource type="Resource" uid="uid://b38chxl1e3q6a" path="res://resources/EnviroDatas/Forest.tres" id="3_i32ta"]
+[ext_resource type="Resource" uid="uid://bgyhcick0673b" path="res://resources/JobDatas/Scholar.tres" id="4_4on3j"]
+[ext_resource type="Resource" uid="uid://cn1wdapyh20rl" path="res://resources/EnviroDatas/Jungle.tres" id="4_jhfjn"]
+[ext_resource type="Resource" uid="uid://4ec0hjnrt2kv" path="res://resources/EnviroDatas/Mountain.tres" id="5_axgu0"]
+[ext_resource type="Resource" uid="uid://dgep5tcss28dk" path="res://resources/JobDatas/Thief.tres" id="5_sb35j"]
+[ext_resource type="Resource" uid="uid://spevyd2ooqql" path="res://resources/EnviroDatas/Sea.tres" id="6_yvxfy"]
+[ext_resource type="Resource" uid="uid://c3gt20e1lhasi" path="res://resources/QuestDatas/Delivery.tres" id="7_8b83s"]
+[ext_resource type="Resource" uid="uid://4lv5qq1dy1u3" path="res://resources/EnviroDatas/Swamp.tres" id="7_gj0kg"]
+[ext_resource type="Resource" uid="uid://vivhbbtsq3hk" path="res://resources/EnviroDatas/Volcano.tres" id="8_876yc"]
+[ext_resource type="Resource" uid="uid://d0o858n3y07ub" path="res://resources/QuestDatas/Dungeon.tres" id="8_jo7fl"]
+[ext_resource type="Resource" uid="uid://c4iabpj6wyxff" path="res://resources/QuestDatas/Escort.tres" id="9_n0wvg"]
+[ext_resource type="Resource" uid="uid://dfr58bhb5pvlv" path="res://resources/QuestDatas/Excavation.tres" id="10_8yo3y"]
+[ext_resource type="Resource" uid="uid://c1ncssfqwp5vd" path="res://resources/QuestDatas/Fight.tres" id="11_s4sht"]
+[ext_resource type="Resource" uid="uid://byl334mfocxgc" path="res://resources/QuestDatas/Picking.tres" id="12_chvgl"]
+[ext_resource type="Resource" uid="uid://whdqi4ukvpc" path="res://resources/QuestDatas/Rescue.tres" id="13_iylc6"]
+[ext_resource type="Resource" uid="uid://cvifgf0bblpvf" path="res://resources/QuestDatas/Robbery.tres" id="14_xxu81"]
+[ext_resource type="Resource" uid="uid://c06uuqfxw2mp3" path="res://resources/MonsterDatas/CarnivorousPlant.tres" id="15_nxtud"]
+[ext_resource type="Resource" uid="uid://ckwt5mxg85btt" path="res://resources/MonsterDatas/Cats.tres" id="16_d4ly8"]
+[ext_resource type="Resource" uid="uid://b45hk86g1o1w7" path="res://resources/MonsterDatas/Childs.tres" id="17_t0vrr"]
+[ext_resource type="Resource" uid="uid://dfhv6octrstl8" path="res://resources/MonsterDatas/Dwarves.tres" id="18_8o6kt"]
+[ext_resource type="Resource" uid="uid://baa632j3uy5in" path="res://resources/MonsterDatas/Elfs.tres" id="19_0gvb2"]
+[ext_resource type="Resource" uid="uid://ds2hoi0t0yheh" path="res://resources/MonsterDatas/Orks.tres" id="20_frce4"]
+[ext_resource type="Resource" uid="uid://euo5huad8npb" path="res://resources/MonsterDatas/Snakes.tres" id="21_cfhnh"]
+[ext_resource type="Resource" uid="uid://cogqbiuvqpo5t" path="res://resources/MonsterDatas/Spiders.tres" id="22_rb614"]
+[ext_resource type="Resource" uid="uid://b02xdm4bxawh2" path="res://resources/MonsterDatas/Wolves.tres" id="23_d40gx"]
+[ext_resource type="Resource" uid="uid://c7bedx6td4mg7" path="res://resources/SpecieDatas/Human.tres" id="24_uxf4m"]
+[ext_resource type="Resource" uid="uid://dahp4xwthbjf3" path="res://resources/TraitDatas/Claustrophobic.tres" id="25_8ejep"]
+[ext_resource type="Resource" uid="uid://w37mnfweh2xf" path="res://resources/SpecieDatas/Cat.tres" id="33_lb36h"]
+[ext_resource type="Resource" uid="uid://bbm12ec2hw8og" path="res://resources/SpecieDatas/Dwarf.tres" id="34_lvhhv"]
+[ext_resource type="Resource" uid="uid://cfcofxki3wscq" path="res://resources/SpecieDatas/Elf.tres" id="35_nmx2h"]
+[ext_resource type="Resource" uid="uid://b75fp2paxrw5g" path="res://resources/SpecieDatas/Halfling.tres" id="36_x7d1m"]
+[ext_resource type="Resource" uid="uid://dmohjsd71054l" path="res://resources/SpecieDatas/Ork.tres" id="38_gx180"]
+[ext_resource type="Resource" uid="uid://b3ic12hcdx7w3" path="res://resources/SpecieDatas/Unicorn.tres" id="39_50mua"]
+[ext_resource type="Resource" uid="uid://dlyjp3pf36rs8" path="res://resources/TraitDatas/Acrophobia.tres" id="40_er0n7"]
+[ext_resource type="Resource" uid="uid://6407rite8f04" path="res://resources/TraitDatas/Agile.tres" id="41_an5ap"]
+[ext_resource type="Resource" uid="uid://ci40o13gr7knp" path="res://resources/TraitDatas/Antropophobic.tres" id="42_gp4ng"]
+[ext_resource type="Resource" uid="uid://cilyxge087pxn" path="res://resources/TraitDatas/Aracnophobic.tres" id="43_pntwu"]
+[ext_resource type="Resource" uid="uid://bomvbvrwk5isq" path="res://resources/TraitDatas/Chatty.tres" id="44_vjtha"]
+[ext_resource type="Resource" uid="uid://gmcp4b5notto" path="res://resources/TraitDatas/Clumsy.tres" id="46_lw0uw"]
+[ext_resource type="Resource" uid="uid://bgdtmalq8di0t" path="res://resources/TraitDatas/Discretion.tres" id="47_fstcp"]
+[ext_resource type="Resource" uid="uid://dml442n7mylyu" path="res://resources/TraitDatas/FastRunner.tres" id="48_fuhxg"]
+[ext_resource type="Resource" uid="uid://67sk7shewa74" path="res://resources/TraitDatas/HatesHeat.tres" id="49_c773g"]
+[ext_resource type="Resource" uid="uid://7qmw2cn3mxkf" path="res://resources/TraitDatas/Honest.tres" id="50_cu6t2"]
+[ext_resource type="Resource" uid="uid://cvc1tmvarircl" path="res://resources/TraitDatas/Hooking.tres" id="51_58fvy"]
+[ext_resource type="Resource" uid="uid://fn0brikvl6ei" path="res://resources/TraitDatas/LightSteps.tres" id="52_ditua"]
+[ext_resource type="Resource" uid="uid://cttg83fcqe1n4" path="res://resources/TraitDatas/Ophiophobia.tres" id="53_vix04"]
+[ext_resource type="Resource" uid="uid://362pj14a07kj" path="res://resources/TraitDatas/PollenAllergy.tres" id="54_gx42x"]
+[ext_resource type="Resource" uid="uid://bknxqseobooe1" path="res://resources/TraitDatas/Prebyopic.tres" id="55_mkrmd"]
+[ext_resource type="Resource" uid="uid://cqqgg7rtr4wp6" path="res://resources/TraitDatas/Skipper.tres" id="56_sjc8v"]
+[ext_resource type="Resource" uid="uid://dg51wncj40mk5" path="res://resources/TraitDatas/Skittish.tres" id="57_u6ndn"]
+[ext_resource type="Resource" uid="uid://diq6k03er8ick" path="res://resources/TraitDatas/SupernaturalHearing.tres" id="58_yltnr"]
+[ext_resource type="Resource" uid="uid://dpmqd6umm8x1p" path="res://resources/TraitDatas/Survival.tres" id="59_07i0n"]
 
 [resource]
 script = ExtResource("1_goeon")
-charac_class_attribute = {
-"Bard": {
-"Dungeon": -2,
-"Fight": -1,
-"Robbery": 1,
-"Snakes": 2
-},
-"Druid": {
-"Cats": -2,
-"Escort": 1,
-"Picking": 2,
-"Rescue": 1,
-"Snakes": -1,
-"Spiders": -1,
-"Wolves": -2
-},
-"Peasant": {
-"Cats": -1,
-"Picking": 2,
-"Robbery": -2,
-"Snakes": 1,
-"Spiders": 1
-},
-"Scholar": {
-"Cats": 2,
-"Dungeon": -2,
-"Excavation": 1,
-"Fight": -2,
-"Picking": 1,
-"Robbery": -1
-},
-"Thief": {
-"Cats": -2,
-"Delivery": -1,
-"Desert": -2,
-"Excavation": 1,
-"Mountain": 1,
-"Picking": 1,
-"Robbery": 2
-},
-"Warrior": {
-"Cave": -1,
-"Dungeon": 2,
-"Escort": 1,
-"Fight": 2,
-"Rescue": 1,
-"Robbery": -2,
-"Swamp": -2
-}
-}
-charac_specie_attribute = {
-"Cat": {
-"Cats": -2,
-"Childs": 2,
-"Excavation": 1,
-"Robbery": 2,
-"Sea": -2,
-"Swamp": -1
-},
-"Dwarf": {
-"Cave": 1,
-"Dwarves": -2,
-"Elves": 2,
-"Forest": -1,
-"Mountain": 2,
-"Orks": 1,
-"Picking": -2,
-"Sea": -1
-},
-"Elf": {
-"Cave": -1,
-"Delivery": 1,
-"Dwarves": 2,
-"Elves": -2,
-"Forest": 2
-},
-"Halfling": {
-"CarnivorousPlants": -1,
-"Cave": 1,
-"Delivery": -2,
-"Forest": 2,
-"Robbery": 2,
-"Swamp": 1,
-"Wolves": -1
-},
-"Human": {
-"Cats": -1,
-"Childs": -2,
-"Forest": 1,
-"Sea": 2
-},
-"Ork": {
-"Desert": -2,
-"Dungeon": 2,
-"Dwarves": 1,
-"Fight": 2,
-"Mountain": 1,
-"Orks": -2,
-"Robbery": -1,
-"Swamp": -1
-},
-"Unicorn": {
-"Cave": -2,
-"Childs": 2,
-"Delivery": 1,
-"Escort": 2,
-"Jungle": -1,
-"Robbery": -2,
-"Sea": -1
-}
-}
-charac_trait_attribute = {
-"Acrophobia": {
-"Mountain": -2,
-"Volcano": -2
-},
-"Agile": {
-"Jungle": 1,
-"Robbery": 2,
-"Swamp": 1
-},
-"Antropophobic": {
-"Childs": 2,
-"Escort": -2,
-"Rescue": -2
-},
-"Aracnophobia": {
-"Spiders": -2
-},
-"Chatty": {
-"Escort": -2
-},
-"Claustrophobic": {
-"Cave": -2
-},
-"Clumsy": {
-"Delivery": -1,
-"Excavation": -1,
-"Robbery": -2
-},
-"Discretion": {
-"Cave": 1,
-"Robbery": 2
-},
-"Fast_Runner": {
-"Delivery": 2
-},
-"Hates_Heat": {
-"Cave": 2,
-"Desert": -2,
-"Mountain": 2,
-"Volcano": -2
-},
-"Honest": {
-"Delivery": 2,
-"Robbery": -2
-},
-"Hooking": {
-"Robbery": 2
-},
-"Light_Steps": {
-"Robbery": 2,
-"Swamp": 2
-},
-"Ophiophobia": {
-"Snakes": -2
-},
-"Pollen_Allergy": {
-"CarnivorousPlants": 1,
-"Forest": -2,
-"Picking": -2
-},
-"Prebyopic": {
-"Cats": 2,
-"Excavation": -2,
-"Picking": -2
-},
-"Skipper": {
-"Sea": 2
-},
-"Skittish": {
-"Cave": -1,
-"Desert": 2,
-"Mountain": -2,
-"Volcano": 2
-},
-"Supernatural_Hearing": {
-"Cats": 2,
-"Cave": 1,
-"Childs": -2
-},
-"Survival": {
-"CarnivorousPlants": 1,
-"Desert": 2,
-"Jungle": 2,
-"Wolves": 1
-}
-}
+jobDatas = Array[Resource("res://resources/JobData.gd")]([ExtResource("1_inech"), ExtResource("2_u06ey"), ExtResource("3_bsk53"), ExtResource("4_4on3j"), ExtResource("5_sb35j"), ExtResource("1_ypesl")])
+specieDatas = Array[Resource("res://resources/SpecieData.gd")]([ExtResource("33_lb36h"), ExtResource("34_lvhhv"), ExtResource("35_nmx2h"), ExtResource("36_x7d1m"), ExtResource("24_uxf4m"), ExtResource("38_gx180"), ExtResource("39_50mua")])
+traitDatas = Array[Resource("res://resources/TraitData.gd")]([ExtResource("40_er0n7"), ExtResource("41_an5ap"), ExtResource("42_gp4ng"), ExtResource("43_pntwu"), ExtResource("44_vjtha"), ExtResource("25_8ejep"), ExtResource("46_lw0uw"), ExtResource("47_fstcp"), ExtResource("48_fuhxg"), ExtResource("49_c773g"), ExtResource("50_cu6t2"), ExtResource("51_58fvy"), ExtResource("52_ditua"), ExtResource("53_vix04"), ExtResource("54_gx42x"), ExtResource("55_mkrmd"), ExtResource("56_sjc8v"), ExtResource("57_u6ndn"), ExtResource("58_yltnr"), ExtResource("59_07i0n")])
+questDatas = Array[Resource("res://resources/QuestData.gd")]([ExtResource("7_8b83s"), ExtResource("8_jo7fl"), ExtResource("9_n0wvg"), ExtResource("10_8yo3y"), ExtResource("11_s4sht"), ExtResource("12_chvgl"), ExtResource("13_iylc6"), ExtResource("14_xxu81")])
+monsterDatas = Array[Resource("res://resources/MonsterData.gd")]([ExtResource("15_nxtud"), ExtResource("16_d4ly8"), ExtResource("17_t0vrr"), ExtResource("18_8o6kt"), ExtResource("19_0gvb2"), ExtResource("20_frce4"), ExtResource("21_cfhnh"), ExtResource("22_rb614"), ExtResource("23_d40gx")])
+biomeDatas = Array[Resource("res://resources/EnviroData.gd")]([ExtResource("1_8sr6k"), ExtResource("2_g220f"), ExtResource("3_i32ta"), ExtResource("4_jhfjn"), ExtResource("5_axgu0"), ExtResource("6_yvxfy"), ExtResource("7_gj0kg"), ExtResource("8_876yc")])

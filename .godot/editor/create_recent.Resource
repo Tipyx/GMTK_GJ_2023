@@ -1,4 +1,7 @@
-QuestTypeData
+TraitData
+SpecieData
+JobData
+QuestData
 MonsterData
 GameData
 Resource

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="SpecieData" load_steps=17 format=3 uid="uid://b3ic12hcdx7w3"]
+
+[ext_resource type="Script" path="res://resources/SpecieData.gd" id="1_8gdj4"]
+[ext_resource type="Resource" uid="uid://bf2c8epulxmb4" path="res://resources/EnviroDatas/Cave.tres" id="1_b3jcc"]
+[ext_resource type="Resource" uid="uid://cvifgf0bblpvf" path="res://resources/QuestDatas/Robbery.tres" id="2_3mumn"]
+[ext_resource type="AudioStream" uid="uid://dgqihmrb6yusm" path="res://sounds/sfxs/hellos/UNICORN/HELLO UNICORN-01.wav" id="3_hava3"]
+[ext_resource type="Resource" uid="uid://b45hk86g1o1w7" path="res://resources/MonsterDatas/Childs.tres" id="3_qgypk"]
+[ext_resource type="AudioStream" uid="uid://d2rtx7ftj4dhb" path="res://sounds/sfxs/hellos/UNICORN/HELLO UNICORN-02.wav" id="4_34gsd"]
+[ext_resource type="Resource" uid="uid://c4iabpj6wyxff" path="res://resources/QuestDatas/Escort.tres" id="4_wkdru"]
+[ext_resource type="AudioStream" uid="uid://ca1wy1jw7v0co" path="res://sounds/sfxs/hellos/UNICORN/HELLO UNICORN-03.wav" id="5_6yuw1"]
+[ext_resource type="AudioStream" uid="uid://ctf8fqr3faag2" path="res://sounds/sfxs/hellos/UNICORN/HELLO UNICORN-04.wav" id="6_y5r0o"]
+[ext_resource type="AudioStream" uid="uid://bqlwke58yc3xu" path="res://sounds/sfxs/hellos/UNICORN/HELLO UNICORN-05.wav" id="7_4q4nk"]
+[ext_resource type="AudioStream" uid="uid://blpadvj8chhmm" path="res://sounds/sfxs/hellos/UNICORN/HELLO UNICORN-06.wav" id="8_1pb32"]
+[ext_resource type="AudioStream" uid="uid://dvsbqesnkcepr" path="res://sounds/sfxs/hellos/UNICORN/HELLO UNICORN-07.wav" id="9_jpas6"]
+[ext_resource type="AudioStream" uid="uid://cnvndgd50nkd6" path="res://sounds/sfxs/hellos/UNICORN/HELLO UNICORN.wav" id="10_s6a8p"]
+[ext_resource type="Resource" uid="uid://spevyd2ooqql" path="res://resources/EnviroDatas/Sea.tres" id="12_37jj6"]
+[ext_resource type="Resource" uid="uid://cn1wdapyh20rl" path="res://resources/EnviroDatas/Jungle.tres" id="13_xl2p5"]
+[ext_resource type="Resource" uid="uid://c3gt20e1lhasi" path="res://resources/QuestDatas/Delivery.tres" id="16_ew7ri"]
+
+[resource]
+script = ExtResource("1_8gdj4")
+type = 3
+hellos_sfx = Array[AudioStreamWAV]([ExtResource("3_hava3"), ExtResource("4_34gsd"), ExtResource("5_6yuw1"), ExtResource("6_y5r0o"), ExtResource("7_4q4nk"), ExtResource("8_1pb32"), ExtResource("9_jpas6"), ExtResource("10_s6a8p")])
+double_negative = Array[Resource]([ExtResource("1_b3jcc"), ExtResource("2_3mumn")])
+simple_negative = Array[Resource]([ExtResource("12_37jj6"), ExtResource("13_xl2p5")])
+simple_positive = Array[Resource]([ExtResource("16_ew7ri")])
+double_positive = Array[Resource]([ExtResource("3_qgypk"), ExtResource("4_wkdru")])

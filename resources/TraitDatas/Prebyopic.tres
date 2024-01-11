@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="TraitData" load_steps=5 format=3 uid="uid://bknxqseobooe1"]
+
+[ext_resource type="Resource" uid="uid://byl334mfocxgc" path="res://resources/QuestDatas/Picking.tres" id="1_a5usx"]
+[ext_resource type="Script" path="res://resources/TraitData.gd" id="1_mbkft"]
+[ext_resource type="Resource" uid="uid://dfr58bhb5pvlv" path="res://resources/QuestDatas/Excavation.tres" id="2_hlfrd"]
+[ext_resource type="Resource" uid="uid://ckwt5mxg85btt" path="res://resources/MonsterDatas/Cats.tres" id="3_bgo78"]
+
+[resource]
+script = ExtResource("1_mbkft")
+type = 2
+desc = "I lost my glasses yesterday and have some trouble with my near vision."
+double_negative = Array[Resource]([ExtResource("1_a5usx"), ExtResource("2_hlfrd")])
+simple_negative = Array[Resource]([])
+simple_positive = Array[Resource]([])
+double_positive = Array[Resource]([ExtResource("3_bgo78")])

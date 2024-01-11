@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="SpecieData" load_steps=18 format=3 uid="uid://dmohjsd71054l"]
+
+[ext_resource type="Script" path="res://resources/SpecieData.gd" id="1_vn4jg"]
+[ext_resource type="Resource" uid="uid://ds2hoi0t0yheh" path="res://resources/MonsterDatas/Orks.tres" id="1_w5ss6"]
+[ext_resource type="Resource" uid="uid://csogr7dh4b1f4" path="res://resources/EnviroDatas/Desert.tres" id="2_xc30f"]
+[ext_resource type="Resource" uid="uid://c1ncssfqwp5vd" path="res://resources/QuestDatas/Fight.tres" id="3_1rb3q"]
+[ext_resource type="Resource" uid="uid://d0o858n3y07ub" path="res://resources/QuestDatas/Dungeon.tres" id="4_g4qmk"]
+[ext_resource type="AudioStream" uid="uid://t47dlvajmxvr" path="res://sounds/sfxs/hellos/ORC/HELLO ORC-01.wav" id="5_j8qmu"]
+[ext_resource type="AudioStream" uid="uid://b80p8affiqc2t" path="res://sounds/sfxs/hellos/ORC/HELLO ORC-02.wav" id="6_8anyg"]
+[ext_resource type="AudioStream" uid="uid://b6u0ae3velowe" path="res://sounds/sfxs/hellos/ORC/HELLO ORC-03.wav" id="7_1vq5d"]
+[ext_resource type="AudioStream" uid="uid://dojufgqcuxrn0" path="res://sounds/sfxs/hellos/ORC/HELLO ORC-04.wav" id="8_c03c0"]
+[ext_resource type="AudioStream" uid="uid://dsb1803vcoi8d" path="res://sounds/sfxs/hellos/ORC/HELLO ORC-05.wav" id="9_nj0ia"]
+[ext_resource type="AudioStream" uid="uid://q1fk0ilghg30" path="res://sounds/sfxs/hellos/ORC/HELLO ORC-06.wav" id="10_23gma"]
+[ext_resource type="AudioStream" uid="uid://bj30yn7diml43" path="res://sounds/sfxs/hellos/ORC/HELLO ORC-07.wav" id="11_1wkk1"]
+[ext_resource type="AudioStream" uid="uid://c7bsqleaejsjh" path="res://sounds/sfxs/hellos/ORC/HELLO ORC.wav" id="12_boxj6"]
+[ext_resource type="Resource" uid="uid://4lv5qq1dy1u3" path="res://resources/EnviroDatas/Swamp.tres" id="14_owq4n"]
+[ext_resource type="Resource" uid="uid://cvifgf0bblpvf" path="res://resources/QuestDatas/Robbery.tres" id="15_pf1pw"]
+[ext_resource type="Resource" uid="uid://dfhv6octrstl8" path="res://resources/MonsterDatas/Dwarves.tres" id="16_frhtx"]
+[ext_resource type="Resource" uid="uid://4ec0hjnrt2kv" path="res://resources/EnviroDatas/Mountain.tres" id="17_srwl4"]
+
+[resource]
+script = ExtResource("1_vn4jg")
+type = 1
+hellos_sfx = Array[AudioStreamWAV]([ExtResource("5_j8qmu"), ExtResource("6_8anyg"), ExtResource("7_1vq5d"), ExtResource("8_c03c0"), ExtResource("9_nj0ia"), ExtResource("10_23gma"), ExtResource("11_1wkk1"), ExtResource("12_boxj6")])
+double_negative = Array[Resource]([ExtResource("1_w5ss6"), ExtResource("2_xc30f")])
+simple_negative = Array[Resource]([ExtResource("14_owq4n"), ExtResource("15_pf1pw")])
+simple_positive = Array[Resource]([ExtResource("16_frhtx"), ExtResource("17_srwl4")])
+double_positive = Array[Resource]([ExtResource("3_1rb3q"), ExtResource("4_g4qmk")])

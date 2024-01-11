@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="TraitData" load_steps=3 format=3 uid="uid://cilyxge087pxn"]
+
+[ext_resource type="Resource" uid="uid://cogqbiuvqpo5t" path="res://resources/MonsterDatas/Spiders.tres" id="1_8u4xj"]
+[ext_resource type="Script" path="res://resources/TraitData.gd" id="1_gjdej"]
+
+[resource]
+script = ExtResource("1_gjdej")
+type = 15
+desc = "I am fearless, except if there is a spider in the room."
+double_negative = Array[Resource]([ExtResource("1_8u4xj")])
+simple_negative = Array[Resource]([])
+simple_positive = Array[Resource]([])
+double_positive = Array[Resource]([])

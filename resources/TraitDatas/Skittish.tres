@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="TraitData" load_steps=6 format=3 uid="uid://dg51wncj40mk5"]
+
+[ext_resource type="Script" path="res://resources/TraitData.gd" id="1_r3h2f"]
+[ext_resource type="Resource" uid="uid://4ec0hjnrt2kv" path="res://resources/EnviroDatas/Mountain.tres" id="1_r5478"]
+[ext_resource type="Resource" uid="uid://csogr7dh4b1f4" path="res://resources/EnviroDatas/Desert.tres" id="2_akagn"]
+[ext_resource type="Resource" uid="uid://vivhbbtsq3hk" path="res://resources/EnviroDatas/Volcano.tres" id="3_avfuc"]
+[ext_resource type="Resource" uid="uid://bf2c8epulxmb4" path="res://resources/EnviroDatas/Cave.tres" id="5_7oheb"]
+
+[resource]
+script = ExtResource("1_r3h2f")
+type = 5
+desc = "I am a skittish person, for sure."
+double_negative = Array[Resource]([ExtResource("1_r5478")])
+simple_negative = Array[Resource]([ExtResource("5_7oheb")])
+simple_positive = Array[Resource]([])
+double_positive = Array[Resource]([ExtResource("2_akagn"), ExtResource("3_avfuc")])

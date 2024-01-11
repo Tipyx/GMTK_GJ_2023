@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="TraitData" load_steps=3 format=3 uid="uid://cttg83fcqe1n4"]
+
+[ext_resource type="Script" path="res://resources/TraitData.gd" id="1_d2rdw"]
+[ext_resource type="Resource" uid="uid://euo5huad8npb" path="res://resources/MonsterDatas/Snakes.tres" id="1_ykqwk"]
+
+[resource]
+script = ExtResource("1_d2rdw")
+type = 16
+desc = "I suffer from ophiophobia."
+double_negative = Array[Resource]([ExtResource("1_ykqwk")])
+simple_negative = Array[Resource]([])
+simple_positive = Array[Resource]([])
+double_positive = Array[Resource]([])

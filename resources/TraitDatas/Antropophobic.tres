@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="TraitData" load_steps=5 format=3 uid="uid://ci40o13gr7knp"]
+
+[ext_resource type="Resource" uid="uid://whdqi4ukvpc" path="res://resources/QuestDatas/Rescue.tres" id="1_7dkyi"]
+[ext_resource type="Script" path="res://resources/TraitData.gd" id="1_jloot"]
+[ext_resource type="Resource" uid="uid://c4iabpj6wyxff" path="res://resources/QuestDatas/Escort.tres" id="2_xksd2"]
+[ext_resource type="Resource" uid="uid://b45hk86g1o1w7" path="res://resources/MonsterDatas/Childs.tres" id="3_nr2u8"]
+
+[resource]
+script = ExtResource("1_jloot")
+type = 14
+desc = "I hate people. It costs me a lot to come here."
+double_negative = Array[Resource]([ExtResource("1_7dkyi"), ExtResource("2_xksd2")])
+simple_negative = Array[Resource]([])
+simple_positive = Array[Resource]([])
+double_positive = Array[Resource]([ExtResource("3_nr2u8")])

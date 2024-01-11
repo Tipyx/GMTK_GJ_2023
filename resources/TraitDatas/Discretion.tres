@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="TraitData" load_steps=4 format=3 uid="uid://bgdtmalq8di0t"]
+
+[ext_resource type="Script" path="res://resources/TraitData.gd" id="1_4yoha"]
+[ext_resource type="Resource" uid="uid://cvifgf0bblpvf" path="res://resources/QuestDatas/Robbery.tres" id="1_17kox"]
+[ext_resource type="Resource" uid="uid://bf2c8epulxmb4" path="res://resources/EnviroDatas/Cave.tres" id="3_x6yox"]
+
+[resource]
+script = ExtResource("1_4yoha")
+type = 12
+desc = "People never notice me, as if I were transparent."
+double_negative = Array[Resource]([])
+simple_negative = Array[Resource]([])
+simple_positive = Array[Resource]([ExtResource("3_x6yox")])
+double_positive = Array[Resource]([ExtResource("1_17kox")])

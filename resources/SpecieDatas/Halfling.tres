@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="SpecieData" load_steps=17 format=3 uid="uid://b75fp2paxrw5g"]
+
+[ext_resource type="Resource" uid="uid://c3gt20e1lhasi" path="res://resources/QuestDatas/Delivery.tres" id="1_rh35g"]
+[ext_resource type="Script" path="res://resources/SpecieData.gd" id="1_suhd1"]
+[ext_resource type="Resource" uid="uid://b38chxl1e3q6a" path="res://resources/EnviroDatas/Forest.tres" id="2_gm28l"]
+[ext_resource type="Resource" uid="uid://cvifgf0bblpvf" path="res://resources/QuestDatas/Robbery.tres" id="3_30f4u"]
+[ext_resource type="AudioStream" uid="uid://c6y74mr2f7anx" path="res://sounds/sfxs/hellos/HALFLING/HELLO HALFLING-01.wav" id="4_u55pi"]
+[ext_resource type="AudioStream" uid="uid://dm40cgv6h38on" path="res://sounds/sfxs/hellos/HALFLING/HELLO HALFLING-02.wav" id="5_fdofk"]
+[ext_resource type="AudioStream" uid="uid://dc4ypq3r526eo" path="res://sounds/sfxs/hellos/HALFLING/HELLO HALFLING-03.wav" id="6_t8c27"]
+[ext_resource type="AudioStream" uid="uid://bmxug12524qns" path="res://sounds/sfxs/hellos/HALFLING/HELLO HALFLING-04.wav" id="7_sdj51"]
+[ext_resource type="AudioStream" uid="uid://bwxar44jw46m5" path="res://sounds/sfxs/hellos/HALFLING/HELLO HALFLING-05.wav" id="8_y5wl0"]
+[ext_resource type="AudioStream" uid="uid://bj1s7nopkvsrn" path="res://sounds/sfxs/hellos/HALFLING/HELLO HALFLING-06.wav" id="9_duvr6"]
+[ext_resource type="AudioStream" uid="uid://d4aqfhxyakex2" path="res://sounds/sfxs/hellos/HALFLING/HELLO HALFLING-07.wav" id="10_4r52q"]
+[ext_resource type="AudioStream" uid="uid://d3tsu1ywg5ehu" path="res://sounds/sfxs/hellos/HALFLING/HELLO HALFLING.wav" id="11_1url6"]
+[ext_resource type="Resource" uid="uid://b02xdm4bxawh2" path="res://resources/MonsterDatas/Wolves.tres" id="13_cs0qw"]
+[ext_resource type="Resource" uid="uid://c06uuqfxw2mp3" path="res://resources/MonsterDatas/CarnivorousPlant.tres" id="14_jgftb"]
+[ext_resource type="Resource" uid="uid://4lv5qq1dy1u3" path="res://resources/EnviroDatas/Swamp.tres" id="15_doyr3"]
+[ext_resource type="Resource" uid="uid://bf2c8epulxmb4" path="res://resources/EnviroDatas/Cave.tres" id="16_ebdl7"]
+
+[resource]
+script = ExtResource("1_suhd1")
+type = 2
+hellos_sfx = Array[AudioStreamWAV]([ExtResource("4_u55pi"), ExtResource("5_fdofk"), ExtResource("6_t8c27"), ExtResource("7_sdj51"), ExtResource("8_y5wl0"), ExtResource("9_duvr6"), ExtResource("10_4r52q"), ExtResource("11_1url6")])
+double_negative = Array[Resource]([ExtResource("1_rh35g")])
+simple_negative = Array[Resource]([ExtResource("13_cs0qw"), ExtResource("14_jgftb")])
+simple_positive = Array[Resource]([ExtResource("15_doyr3"), ExtResource("16_ebdl7")])
+double_positive = Array[Resource]([ExtResource("2_gm28l"), ExtResource("3_30f4u")])

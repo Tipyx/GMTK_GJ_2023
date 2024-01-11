@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="JobData" load_steps=7 format=3 uid="uid://bnrwu2xf38xgl"]
+
+[ext_resource type="Resource" uid="uid://cvifgf0bblpvf" path="res://resources/QuestDatas/Robbery.tres" id="1_lg7l0"]
+[ext_resource type="Script" path="res://resources/JobData.gd" id="1_lv4uc"]
+[ext_resource type="Resource" uid="uid://byl334mfocxgc" path="res://resources/QuestDatas/Picking.tres" id="2_0v8qv"]
+[ext_resource type="Resource" uid="uid://ckwt5mxg85btt" path="res://resources/MonsterDatas/Cats.tres" id="4_bgf0g"]
+[ext_resource type="Resource" uid="uid://euo5huad8npb" path="res://resources/MonsterDatas/Snakes.tres" id="5_1yo5v"]
+[ext_resource type="Resource" uid="uid://cogqbiuvqpo5t" path="res://resources/MonsterDatas/Spiders.tres" id="6_wimoq"]
+
+[resource]
+script = ExtResource("1_lv4uc")
+charac_class = 4
+double_negative = Array[Resource]([ExtResource("1_lg7l0")])
+simple_negative = Array[Resource]([ExtResource("4_bgf0g")])
+simple_positive = Array[Resource]([ExtResource("5_1yo5v"), ExtResource("6_wimoq")])
+double_positive = Array[Resource]([ExtResource("2_0v8qv")])

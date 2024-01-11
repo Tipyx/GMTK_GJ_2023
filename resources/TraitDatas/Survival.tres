@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="TraitData" load_steps=6 format=3 uid="uid://dpmqd6umm8x1p"]
+
+[ext_resource type="Resource" uid="uid://csogr7dh4b1f4" path="res://resources/EnviroDatas/Desert.tres" id="1_6hb8h"]
+[ext_resource type="Script" path="res://resources/TraitData.gd" id="1_khtoq"]
+[ext_resource type="Resource" uid="uid://cn1wdapyh20rl" path="res://resources/EnviroDatas/Jungle.tres" id="2_83dgs"]
+[ext_resource type="Resource" uid="uid://c06uuqfxw2mp3" path="res://resources/MonsterDatas/CarnivorousPlant.tres" id="4_hbd7i"]
+[ext_resource type="Resource" uid="uid://b02xdm4bxawh2" path="res://resources/MonsterDatas/Wolves.tres" id="5_oi7wm"]
+
+[resource]
+script = ExtResource("1_khtoq")
+type = 10
+desc = "I learned to survive in hostile environments and face danger."
+double_negative = Array[Resource]([])
+simple_negative = Array[Resource]([])
+simple_positive = Array[Resource]([ExtResource("4_hbd7i"), ExtResource("5_oi7wm")])
+double_positive = Array[Resource]([ExtResource("1_6hb8h"), ExtResource("2_83dgs")])
