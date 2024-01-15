@@ -13,3 +13,5 @@ enum Quests {
 }
 
 @export var type := Quests.DELIVERY
+
+var name_str : String = Quests.keys()[type].capitalize()

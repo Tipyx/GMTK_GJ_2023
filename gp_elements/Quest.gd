@@ -77,7 +77,7 @@ func init(c:Character, wanted_score:int) -> void:
 		
 	monster_stamp.texture = monsterData.img
 	biome_stamp.texture = biomeData.img
-	type_label.text = QuestData.Quests.keys()[questData.type].capitalize()
+	type_label.text = questData.name_str
 	
 	gold_value = randi_range(200, 400) + score * 30
 	gold_label.text = str(gold_value)
