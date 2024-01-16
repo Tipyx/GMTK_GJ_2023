@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="SpecieData" load_steps=14 format=3 uid="uid://c7bedx6td4mg7"]
+[gd_resource type="Resource" script_class="SpecieData" load_steps=18 format=3 uid="uid://c7bedx6td4mg7"]
 
 [ext_resource type="Script" path="res://resources/SpecieData.gd" id="1_8d7k1"]
 [ext_resource type="Resource" uid="uid://b45hk86g1o1w7" path="res://resources/MonsterDatas/Childs.tres" id="1_e3kba"]
@@ -13,11 +13,16 @@
 [ext_resource type="AudioStream" uid="uid://beob8x6hsob8t" path="res://sounds/sfxs/hellos/HUMAN/HELLO HUMAN-06.wav" id="8_ynqy5"]
 [ext_resource type="AudioStream" uid="uid://cgwfo743ouauu" path="res://sounds/sfxs/hellos/HUMAN/HELLO HUMAN-07.wav" id="9_q1lw1"]
 [ext_resource type="AudioStream" uid="uid://y3700q4p52db" path="res://sounds/sfxs/hellos/HUMAN/HELLO HUMAN.wav" id="10_7dfac"]
+[ext_resource type="Texture2D" uid="uid://d3reowaw0hmts" path="res://assets/shadows/SHADOW LAMBDA1.png" id="12_o70to"]
+[ext_resource type="Texture2D" uid="uid://b2d8xfegy8rss" path="res://assets/shadows/SHADOW LAMBDA2.png" id="13_5nvkq"]
+[ext_resource type="Texture2D" uid="uid://dgml7twfu44t6" path="res://assets/shadows/SHADOW LAMBDA4.png" id="14_6ank5"]
+[ext_resource type="Texture2D" uid="uid://jfy3qhxu7gol" path="res://assets/shadows/SHADOW LAMBDA.png" id="15_nebfr"]
 
 [resource]
 script = ExtResource("1_8d7k1")
 type = 0
 hellos_sfx = Array[AudioStreamWAV]([ExtResource("3_o3d6i"), ExtResource("4_6n870"), ExtResource("5_cxyhr"), ExtResource("6_e0h2g"), ExtResource("7_wbt6x"), ExtResource("8_ynqy5"), ExtResource("9_q1lw1"), ExtResource("10_7dfac")])
+shadows_texture = Array[Texture2D]([ExtResource("12_o70to"), ExtResource("13_5nvkq"), ExtResource("14_6ank5"), ExtResource("15_nebfr")])
 double_negative = Array[Resource]([ExtResource("1_e3kba")])
 simple_negative = Array[Resource]([ExtResource("4_5mx72")])
 simple_positive = Array[Resource]([ExtResource("5_75ajh")])

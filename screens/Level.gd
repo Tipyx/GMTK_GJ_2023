@@ -17,6 +17,7 @@ class_name Level extends Node2D
 @onready var quest_wrapper := $QuestWrapper
 @onready var report_ps := preload("res://ui/ReportScreen.tscn")
 
+@onready var charac_shadow := $CharacterShadow
 @onready var charac_dialogBox := $Charac_DialogBox
 @onready var charac_label := $Charac_DialogBox/Charac_Label
 @onready var offer_button := $OfferButton
@@ -190,6 +191,11 @@ func generate_new_character():
 	
 	current_character = Character.new()
 	
+	charac_shadow.texture = current_character.specie.shadows_texture.pick_random()
+	var t := get_tree().create_tween()
+	charac_shadow.position -= Vector2(0, get_viewport().size.y)
+	t.tween_property(charac_shadow, "position", Vector2.ZERO, 0.5).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_CUBIC)
+	
 	var base_text = base_format_texts.pick_random()
 	current_character.complete_name = first_names.pick_random() + " " + last_names.pick_random()
 	charac_label.text = base_text.format({"name":current_character.complete_name, "number":randi_range(20, 300), "class":current_character.job.name.capitalize(), "specie":current_character.specie.name.capitalize(), "trait":current_character.traitData.desc})
@@ -343,10 +349,15 @@ func remove_quest_and_character():
 			t.tween_property(q, "global_position", q.global_position - Vector2(0, 1000), 0.5)
 		t.tween_callback(q.queue_free)
 	get_tree().create_tween().tween_property(charac_dialogBox, "scale", Vector2.ZERO, 0.2).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_IN)
+	
+	get_tree().create_tween().tween_property(charac_shadow, "position", Vector2(0, -get_viewport().size.y), 0.5)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
 	var min = roundi(timer.time_left) / 60
 	var sec = roundi(timer.time_left) % 60
 	timer_label.text = str(min) + ":" + ("0" if sec < 10 else "") + str(sec)
+	
+	charac_shadow.skew = cos(Time.get_unix_time_from_system()) / 10
+	
 	pass

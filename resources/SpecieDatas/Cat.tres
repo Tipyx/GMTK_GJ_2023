@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="SpecieData" load_steps=16 format=3 uid="uid://w37mnfweh2xf"]
+[gd_resource type="Resource" script_class="SpecieData" load_steps=18 format=3 uid="uid://w37mnfweh2xf"]
 
 [ext_resource type="Resource" uid="uid://ckwt5mxg85btt" path="res://resources/MonsterDatas/Cats.tres" id="1_4ul8s"]
 [ext_resource type="Script" path="res://resources/SpecieData.gd" id="1_uts7j"]
@@ -13,13 +13,16 @@
 [ext_resource type="AudioStream" uid="uid://xndtf57hjj2l" path="res://sounds/sfxs/hellos/CAT/HELLO CAT-06.wav" id="10_5lqt6"]
 [ext_resource type="AudioStream" uid="uid://ctepl8drxqjpt" path="res://sounds/sfxs/hellos/CAT/HELLO CAT-07.wav" id="11_wswg8"]
 [ext_resource type="AudioStream" uid="uid://c5pwdiscmfqf8" path="res://sounds/sfxs/hellos/CAT/HELLO CAT.wav" id="12_d7hyp"]
+[ext_resource type="Texture2D" uid="uid://bqejgkugy6yeq" path="res://assets/shadows/SHADOW CAT1.png" id="14_o2qsm"]
 [ext_resource type="Resource" uid="uid://4lv5qq1dy1u3" path="res://resources/EnviroDatas/Swamp.tres" id="14_wfwkb"]
 [ext_resource type="Resource" uid="uid://dfr58bhb5pvlv" path="res://resources/QuestDatas/Excavation.tres" id="15_a4xy4"]
+[ext_resource type="Texture2D" uid="uid://2km5vd44wn3w" path="res://assets/shadows/SHADOW CAT2.png" id="15_djt4u"]
 
 [resource]
 script = ExtResource("1_uts7j")
 type = 4
 hellos_sfx = Array[AudioStreamWAV]([ExtResource("5_qad06"), ExtResource("6_a5sn3"), ExtResource("7_yoisq"), ExtResource("8_sdww1"), ExtResource("9_voroi"), ExtResource("10_5lqt6"), ExtResource("11_wswg8"), ExtResource("12_d7hyp")])
+shadows_texture = Array[Texture2D]([ExtResource("14_o2qsm"), ExtResource("15_djt4u")])
 double_negative = Array[Resource]([ExtResource("1_4ul8s"), ExtResource("2_sit0d")])
 simple_negative = Array[Resource]([ExtResource("14_wfwkb")])
 simple_positive = Array[Resource]([ExtResource("15_a4xy4")])
