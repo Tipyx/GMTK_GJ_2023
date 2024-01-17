@@ -3,3 +3,6 @@ res://Main.tscn
 res://screens/Level.tscn
 res://gp_elements/Quest.tscn
 res://ui/TitleScreen.gd
+res://addons/panku_console/res/panku_console_theme.tres
+res://Main.gd
+res://addons/panku_console/console.tscn

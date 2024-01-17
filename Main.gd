@@ -19,13 +19,9 @@ func _ready() -> void:
 	
 	quit_button.pressed.connect(_on_quit_button_pressed)
 	
-#	SoundManager.play_music()
-
-	#for jd in 
-	#for jd in Global.game_data.jobDatas:
-		#for t in jd.double_negative:
-			#print(t, t is QuestData, t is MonsterData)
-
+	if not OS.is_debug_build(): # Hide it in release
+		get_node("/root/" + PankuConsole.SingletonName).queue_free()
+	
 	go_to_title_screen()
 	
 func _on_quit_button_pressed():
