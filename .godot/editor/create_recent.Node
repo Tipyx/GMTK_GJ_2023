@@ -1,3 +1,6 @@
+OptionButton
+MenuButton
+ItemList
 Sprite2D
 AudioStreamPlayer
 Node2D

@@ -57,3 +57,16 @@ texture = ExtResource("6_6vs1w")
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_4wi1p")
 autoplay = true
+
+[node name="OptionButton" type="OptionButton" parent="."]
+offset_left = 1751.0
+offset_top = 1039.0
+offset_right = 1911.0
+offset_bottom = 1070.0
+item_count = 2
+selected = 0
+fit_to_longest_item = false
+popup/item_0/text = "Windowed"
+popup/item_0/id = 0
+popup/item_1/text = "Fullscreen"
+popup/item_1/id = 1

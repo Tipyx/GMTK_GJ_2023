@@ -1,13 +1,5 @@
-res://screens/Level.tscn
-res://resources/SpecieData.gd
-res://resources/SpecieDatas/Human.tres
-res://resources/SpecieDatas/Cat.tres
-res://resources/SpecieDatas/Dwarf.tres
-res://resources/SpecieDatas/Elf.tres
-res://resources/SpecieDatas/Halfling.tres
-res://resources/SpecieDatas/Ork.tres
-res://resources/SpecieDatas/Unicorn.tres
-res://screens/Level.gd
-res://Main.tscn
 res://ui/TitleScreen.tscn
+res://Main.tscn
+res://screens/Level.tscn
 res://gp_elements/Quest.tscn
+res://ui/TitleScreen.gd
