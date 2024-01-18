@@ -5,6 +5,7 @@ class_name Main extends Node
 @onready var end_day_screen_ps := preload("res://ui/EndDayScreen.tscn")
 @onready var end_game_screen_ps := preload("res://ui/EndGameScreen.tscn")
 @onready var tuto_screen_ps := preload("res://ui/TutoScreen.tscn")
+@onready var transition_ps := preload("res://tools/Transition.tscn")
 
 @onready var scene_wrapper := $SceneWrapper
 @onready var quit_button := $QuitButton
@@ -45,35 +46,56 @@ func clean():
 		end_game_screen = null
 		
 func go_to_title_screen():
-	clean()
+	var transition : Transition = transition_ps.instantiate()
+	add_child(transition)
+	transition.init(1, func():
+		clean()
 	
-	title_screen = title_screen_ps.instantiate()
-	scene_wrapper.add_child(title_screen)
+		title_screen = title_screen_ps.instantiate()
+		scene_wrapper.add_child(title_screen)
+	)
+	#move_child(transition, -1)
 
 func new_game():
-	clean()
-	
-	Global.currentGold = 0
-	Global.currentDay = 0
-	
-	tuto_screen = tuto_screen_ps.instantiate()
-	scene_wrapper.add_child(tuto_screen)
+	var transition : Transition = transition_ps.instantiate()
+	add_child(transition)
+	transition.init(1, func():
+		clean()
+		
+		tuto_screen = tuto_screen_ps.instantiate()
+		scene_wrapper.add_child(tuto_screen)
+		
+		Global.currentGold = 0
+		Global.currentDay = 0
+	)
 	
 func next_level():
-	clean()
+	var transition : Transition = transition_ps.instantiate()
+	add_child(transition)
+	transition.init(0.5, func():
+		clean()
 
-	Global.current_level = level_ps.instantiate()
-	scene_wrapper.add_child(Global.current_level)
+		Global.current_level = level_ps.instantiate()
+		scene_wrapper.add_child(Global.current_level)
+	)
 
 func go_to_end_day_screen(day_gold:int, level_scores:Array[int]):
-	clean()
+	var transition : Transition = transition_ps.instantiate()
+	add_child(transition)
+	transition.init(0.5, func():
+		clean()
 	
-	end_day_screen = end_day_screen_ps.instantiate()
-	scene_wrapper.add_child(end_day_screen)
-	end_day_screen.init(day_gold, level_scores)
+		end_day_screen = end_day_screen_ps.instantiate()
+		scene_wrapper.add_child(end_day_screen)
+		end_day_screen.init(day_gold, level_scores)
+	)
 	
 func go_to_end_game_screen():
-	clean()
+	var transition : Transition = transition_ps.instantiate()
+	add_child(transition)
+	transition.init(0.5, func():
+		clean()
 	
-	end_game_screen = end_game_screen_ps.instantiate()
-	scene_wrapper.add_child(end_game_screen)
+		end_game_screen = end_game_screen_ps.instantiate()
+		scene_wrapper.add_child(end_game_screen)
+	)
