@@ -14,6 +14,8 @@ enum Species {
 
 @export var hellos_sfx : Array[AudioStreamWAV]
 
+@export var shadows_texture : Array[Texture2D]
+
 var name : String = Species.keys()[type]
 
 @export var double_negative : Array[Resource] = []

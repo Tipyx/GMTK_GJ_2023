@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="SpecieData" load_steps=17 format=3 uid="uid://b3ic12hcdx7w3"]
+[gd_resource type="Resource" script_class="SpecieData" load_steps=18 format=3 uid="uid://b3ic12hcdx7w3"]
 
 [ext_resource type="Script" path="res://resources/SpecieData.gd" id="1_8gdj4"]
 [ext_resource type="Resource" uid="uid://bf2c8epulxmb4" path="res://resources/EnviroDatas/Cave.tres" id="1_b3jcc"]
@@ -15,12 +15,14 @@
 [ext_resource type="AudioStream" uid="uid://cnvndgd50nkd6" path="res://sounds/sfxs/hellos/UNICORN/HELLO UNICORN.wav" id="10_s6a8p"]
 [ext_resource type="Resource" uid="uid://spevyd2ooqql" path="res://resources/EnviroDatas/Sea.tres" id="12_37jj6"]
 [ext_resource type="Resource" uid="uid://cn1wdapyh20rl" path="res://resources/EnviroDatas/Jungle.tres" id="13_xl2p5"]
+[ext_resource type="Texture2D" uid="uid://8nyqv5i4qs0o" path="res://assets/shadows/SHADOW UNICORN.png" id="14_vaybv"]
 [ext_resource type="Resource" uid="uid://c3gt20e1lhasi" path="res://resources/QuestDatas/Delivery.tres" id="16_ew7ri"]
 
 [resource]
 script = ExtResource("1_8gdj4")
 type = 3
 hellos_sfx = Array[AudioStreamWAV]([ExtResource("3_hava3"), ExtResource("4_34gsd"), ExtResource("5_6yuw1"), ExtResource("6_y5r0o"), ExtResource("7_4q4nk"), ExtResource("8_1pb32"), ExtResource("9_jpas6"), ExtResource("10_s6a8p")])
+shadows_texture = Array[Texture2D]([ExtResource("14_vaybv")])
 double_negative = Array[Resource]([ExtResource("1_b3jcc"), ExtResource("2_3mumn")])
 simple_negative = Array[Resource]([ExtResource("12_37jj6"), ExtResource("13_xl2p5")])
 simple_positive = Array[Resource]([ExtResource("16_ew7ri")])

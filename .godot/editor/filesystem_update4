@@ -1,7 +1,8 @@
 res://Main.tscn
+res://addons/panku_console/res/panku_console_theme.tres
+res://tools/Transition.tscn
+res://Main.gd
 res://screens/Level.tscn
 res://ui/TitleScreen.tscn
 res://gp_elements/Quest.tscn
-res://resources/QuestData.gd
-res://ui/ReportScreen.gd
-res://gp_elements/Quest.gd
+res://tools/Transition.gd

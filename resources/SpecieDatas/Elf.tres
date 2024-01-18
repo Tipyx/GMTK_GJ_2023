@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="SpecieData" load_steps=15 format=3 uid="uid://cfcofxki3wscq"]
+[gd_resource type="Resource" script_class="SpecieData" load_steps=17 format=3 uid="uid://cfcofxki3wscq"]
 
 [ext_resource type="Resource" uid="uid://baa632j3uy5in" path="res://resources/MonsterDatas/Elfs.tres" id="1_wgh6a"]
 [ext_resource type="Script" path="res://resources/SpecieData.gd" id="1_ys21c"]
@@ -12,13 +12,16 @@
 [ext_resource type="AudioStream" uid="uid://bgsvyc1v8ogx5" path="res://sounds/sfxs/hellos/ELVEN/HELLO ELVEN-06.wav" id="9_vij7b"]
 [ext_resource type="AudioStream" uid="uid://degcupd4lhaua" path="res://sounds/sfxs/hellos/ELVEN/HELLO ELVEN-07.wav" id="10_bpd8l"]
 [ext_resource type="AudioStream" uid="uid://dihkttne1g8oy" path="res://sounds/sfxs/hellos/ELVEN/HELLO ELVEN.wav" id="11_a427y"]
+[ext_resource type="Texture2D" uid="uid://xj632xavbcwe" path="res://assets/shadows/SHADOW ELF (2).png" id="13_ho2v5"]
 [ext_resource type="Resource" uid="uid://bf2c8epulxmb4" path="res://resources/EnviroDatas/Cave.tres" id="13_mc3bd"]
 [ext_resource type="Resource" uid="uid://c3gt20e1lhasi" path="res://resources/QuestDatas/Delivery.tres" id="14_53gsm"]
+[ext_resource type="Texture2D" uid="uid://birageflgq8ly" path="res://assets/shadows/SHADOW ELF.png" id="14_78dmq"]
 
 [resource]
 script = ExtResource("1_ys21c")
 type = 5
 hellos_sfx = Array[AudioStreamWAV]([ExtResource("4_lq1a5"), ExtResource("5_ow104"), ExtResource("6_mbrey"), ExtResource("7_dmw2u"), ExtResource("8_tlla3"), ExtResource("9_vij7b"), ExtResource("10_bpd8l"), ExtResource("11_a427y")])
+shadows_texture = Array[Texture2D]([ExtResource("13_ho2v5"), ExtResource("14_78dmq")])
 double_negative = Array[Resource]([ExtResource("1_wgh6a")])
 simple_negative = Array[Resource]([ExtResource("13_mc3bd")])
 simple_positive = Array[Resource]([ExtResource("14_53gsm")])

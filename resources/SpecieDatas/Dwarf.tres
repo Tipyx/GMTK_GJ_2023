@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="SpecieData" load_steps=18 format=3 uid="uid://bbm12ec2hw8og"]
+[gd_resource type="Resource" script_class="SpecieData" load_steps=19 format=3 uid="uid://bbm12ec2hw8og"]
 
 [ext_resource type="Script" path="res://resources/SpecieData.gd" id="1_f5vys"]
 [ext_resource type="Resource" uid="uid://dfhv6octrstl8" path="res://resources/MonsterDatas/Dwarves.tres" id="1_m61iw"]
@@ -14,6 +14,7 @@
 [ext_resource type="AudioStream" uid="uid://dkvegwmwlroiw" path="res://sounds/sfxs/hellos/DWARF/HELLO DWARF-07.wav" id="11_muoy5"]
 [ext_resource type="AudioStream" uid="uid://cee1d1llu15fg" path="res://sounds/sfxs/hellos/DWARF/HELLO DWARF.wav" id="12_bsdbf"]
 [ext_resource type="Resource" uid="uid://b38chxl1e3q6a" path="res://resources/EnviroDatas/Forest.tres" id="14_mm4hy"]
+[ext_resource type="Texture2D" uid="uid://bovu8ghoaa53u" path="res://assets/shadows/SHADOW DWARF.png" id="14_y0b14"]
 [ext_resource type="Resource" uid="uid://spevyd2ooqql" path="res://resources/EnviroDatas/Sea.tres" id="15_633ao"]
 [ext_resource type="Resource" uid="uid://bf2c8epulxmb4" path="res://resources/EnviroDatas/Cave.tres" id="16_tjun8"]
 [ext_resource type="Resource" uid="uid://ds2hoi0t0yheh" path="res://resources/MonsterDatas/Orks.tres" id="17_47b8d"]
@@ -22,6 +23,7 @@
 script = ExtResource("1_f5vys")
 type = 6
 hellos_sfx = Array[AudioStreamWAV]([ExtResource("5_sgh6i"), ExtResource("6_2c211"), ExtResource("7_a3a4u"), ExtResource("8_4unqi"), ExtResource("9_q4i1k"), ExtResource("10_2fg48"), ExtResource("11_muoy5"), ExtResource("12_bsdbf")])
+shadows_texture = Array[Texture2D]([ExtResource("14_y0b14")])
 double_negative = Array[Resource]([ExtResource("1_m61iw"), ExtResource("2_2iegm")])
 simple_negative = Array[Resource]([ExtResource("14_mm4hy"), ExtResource("15_633ao")])
 simple_positive = Array[Resource]([ExtResource("16_tjun8"), ExtResource("17_47b8d")])

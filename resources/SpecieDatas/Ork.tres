@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="SpecieData" load_steps=18 format=3 uid="uid://dmohjsd71054l"]
+[gd_resource type="Resource" script_class="SpecieData" load_steps=19 format=3 uid="uid://dmohjsd71054l"]
 
 [ext_resource type="Script" path="res://resources/SpecieData.gd" id="1_vn4jg"]
 [ext_resource type="Resource" uid="uid://ds2hoi0t0yheh" path="res://resources/MonsterDatas/Orks.tres" id="1_w5ss6"]
@@ -14,6 +14,7 @@
 [ext_resource type="AudioStream" uid="uid://bj30yn7diml43" path="res://sounds/sfxs/hellos/ORC/HELLO ORC-07.wav" id="11_1wkk1"]
 [ext_resource type="AudioStream" uid="uid://c7bsqleaejsjh" path="res://sounds/sfxs/hellos/ORC/HELLO ORC.wav" id="12_boxj6"]
 [ext_resource type="Resource" uid="uid://4lv5qq1dy1u3" path="res://resources/EnviroDatas/Swamp.tres" id="14_owq4n"]
+[ext_resource type="Texture2D" uid="uid://deh4thvk0reod" path="res://assets/shadows/SHADOW ORC.png" id="14_xioof"]
 [ext_resource type="Resource" uid="uid://cvifgf0bblpvf" path="res://resources/QuestDatas/Robbery.tres" id="15_pf1pw"]
 [ext_resource type="Resource" uid="uid://dfhv6octrstl8" path="res://resources/MonsterDatas/Dwarves.tres" id="16_frhtx"]
 [ext_resource type="Resource" uid="uid://4ec0hjnrt2kv" path="res://resources/EnviroDatas/Mountain.tres" id="17_srwl4"]
@@ -22,6 +23,7 @@
 script = ExtResource("1_vn4jg")
 type = 1
 hellos_sfx = Array[AudioStreamWAV]([ExtResource("5_j8qmu"), ExtResource("6_8anyg"), ExtResource("7_1vq5d"), ExtResource("8_c03c0"), ExtResource("9_nj0ia"), ExtResource("10_23gma"), ExtResource("11_1wkk1"), ExtResource("12_boxj6")])
+shadows_texture = Array[Texture2D]([ExtResource("14_xioof")])
 double_negative = Array[Resource]([ExtResource("1_w5ss6"), ExtResource("2_xc30f")])
 simple_negative = Array[Resource]([ExtResource("14_owq4n"), ExtResource("15_pf1pw")])
 simple_positive = Array[Resource]([ExtResource("16_frhtx"), ExtResource("17_srwl4")])
